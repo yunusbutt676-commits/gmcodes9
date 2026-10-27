@@ -68,6 +68,7 @@ const PUBLIC_REPOSITORIES = new Set([
   "mern-courses-management",
   "python-django",
   "advanced-api",
+  "nexacart",
   "novalearn-ai",
   "flask-react",
   "ai_smart_assistant",
@@ -90,7 +91,7 @@ function cleanReply(text: string) {
     .replace(/\r\n?/g, "\n")
     // Convert Markdown links into URLs for our safe link renderer.
     .replace(
-      /\[([^\]]*)\]\((https?:\/\/[^\s)]+|mailto:[^\s)]+|tel:[^\s)]+|\/Resume\.GMs\.pdf)\)/gi,
+      /\[([^\]]*)\]\((https?:\/\/[^\s)]+|mailto:[^\s)]+|tel:[^\s)]+|\/Resume\.GM9\.pdf)\)/gi,
       "$2"
     )
     .replace(/https?:\/\/[^\s<>"`*]+/gi, (raw) => {
@@ -105,9 +106,9 @@ function cleanReply(text: string) {
 
         if (
           host === "gmcodes9.com" &&
-          /^\/(?:Resume|Resume\.GMs)\.pdf$/i.test(url.pathname)
+          /^\/(?:Resume|Resume\.GM9)\.pdf$/i.test(url.pathname)
         ) {
-          return `/Resume.GMs.pdf${suffix}`;
+          return `/Resume.GM9.pdf${suffix}`;
         }
       } catch {
         return raw;
@@ -149,11 +150,11 @@ function renderBold(text: string) {
 
 function renderInline(text: string, streaming = false) {
   const parts = text.split(
-    /(https?:\/\/[^\s<>"`*]+|mailto:[^\s<>"`*]+|tel:\+?[\d-]+|\/Resume\.GMs\.pdf)/gi
+    /(https?:\/\/[^\s<>"`*]+|mailto:[^\s<>"`*]+|tel:\+?[\d-]+|\/Resume\.GM9\.pdf)/gi
   );
 
   return parts.map((part, index) => {
-    if (!/^(https?:\/\/|mailto:|tel:|\/Resume\.GMs\.pdf$)/i.test(part)) {
+    if (!/^(https?:\/\/|mailto:|tel:|\/Resume\.GM9\.pdf$)/i.test(part)) {
       return <span key={index}>{renderBold(part)}</span>;
     }
 
@@ -171,9 +172,9 @@ function renderInline(text: string, streaming = false) {
     let label = href;
     let newTab = false;
 
-    if (href.toLowerCase() === "/resume.gms.pdf") {
-      href = "/Resume.GMs.pdf";
-      label = "Resume.GMs.pdf";
+    if (href.toLowerCase() === "/resume.gm9.pdf") {
+      href = "/Resume.GM9.pdf";
+      label = "Resume.GM9.pdf";
       newTab = true;
     } else {
       try {
@@ -197,9 +198,9 @@ function renderInline(text: string, streaming = false) {
               ? "View Source Code"
               : "View GitHub";
           } else if (host === "gmcodes9.com") {
-            if (/^\/(?:Resume|Resume\.GMs)\.pdf$/i.test(path)) {
-              href = "/Resume.GMs.pdf";
-              label = "Resume.GMs.pdf";
+            if (/^\/(?:Resume|Resume\.GM9)\.pdf$/i.test(path)) {
+              href = "/Resume.GM9.pdf";
+              label = "Resume.GM9.pdf";
             } else {
               label = path === "/services" || path === "/services/"
                 ? "View Services"

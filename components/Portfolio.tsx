@@ -185,11 +185,14 @@ const PROJECTS: Project[] = [
     images: ["/Images/01.png"],
   },
   {
-    name: "Laravel E-Commerce Platform",
+    name: "Nexacart E-Commerce Platform",
     description:
-      "A Laravel-based e-commerce platform with Stripe payment integration, Google and Facebook social authentication, product management, and a fully functional shopping cart experience.",
-    stack: ["Laravel", "PHP", "MySQL"],
-    links: {},
+      "A full-stack e-commerce project built with Laravel, Next.js, and MySQL. Includes Google Sign-In, Stripe checkout, a Groq-powered shopping assistant, and customer and administrator dashboards.",
+    stack: ["Laravel", "PHP", "Next.js", "MySQL"],
+    links: {
+      code: "https://github.com/yunusbutt676-commits/nexacart.git",
+    },
+    images: ["/Images/nx1.png", "/Images/nx2.png", "/Images/nx3.png", "/Images/nx6.png", "/Images/nx9.png", "/Images/nx20.png", "/Images/nx19.png"],
   },
   {
     name: "NovaLearn AI",
@@ -482,10 +485,10 @@ export default function Portfolio() {
                 <a href={LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="gm-button">
                   <FaLinkedin className="text-[#0A66C2]" aria-hidden="true" /> LinkedIn
                 </a>
-                <a href="/Resume.GMs.pdf" target="_blank" rel="noopener noreferrer" className="gm-button gm-button-soft">
+                <a href="/Resume.GM9.pdf" target="_blank" rel="noopener noreferrer" className="gm-button gm-button-soft">
                   <Eye aria-hidden="true" /> View CV
                 </a>
-                <a href="/Resume.GMs.pdf" download="GM-CV.pdf" className="gm-button gm-button-blue">
+                <a href="/Resume.GM9.pdf" download="GM-CV.pdf" className="gm-button gm-button-blue">
                   <Download aria-hidden="true" /> Download CV
                 </a>
               </div>

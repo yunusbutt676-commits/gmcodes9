@@ -15,7 +15,7 @@ const PROFILE = {
   phone: "+92-304-5478602",
   phoneLink: "tel:+923045478602",
   whatsapp: "https://wa.me/923045478602",
-  resume: "/Resume.GMs.pdf",
+  resume: "/Resume.GM9.pdf",
   availability:
     "Open for Remote Jobs, Online Work, Freelance Projects, and Full-Time Opportunities.",
 };
@@ -197,10 +197,11 @@ const PROJECTS = [
     code: "https://github.com/yunusbutt676-commits/Advanced-Api",
   },
   {
-    name: "Laravel E-Commerce Platform",
+    name: "Nexacart E-Commerce Platform",
     description:
-      "Laravel e-commerce platform with Stripe payments, Google and Facebook social login, and a functional shopping cart.",
-    stack: ["Laravel", "PHP", "MySQL"],
+      "A full-stack e-commerce project built with Laravel, Next.js, and MySQL. Includes Google Sign-In, Stripe checkout, a Groq-powered shopping assistant, and customer and administrator dashboards.",
+    stack: ["Laravel", "PHP", "Next.js", "MySQL"],
+    code: "https://github.com/yunusbutt676-commits/nexacart",
   },
   {
     name: "NovaLearn AI",
@@ -268,11 +269,15 @@ RESPONSE RULES:
 - Put each project name, detail, and link on a separate line.
 - Separate projects and sections with a blank line.
 - Do not use asterisks as list bullets.
-- Do not use Markdown links, HTML, tables, or code blocks.
+- Do not use HTML, tables, or code blocks.
+- Markdown links are allowed for supplied website and source-code URLs.
 - For website links, use the complete URL from KNOWLEDGE on its own line.
-- For the resume, output exactly /resume.pdf on its own line.
+- For every project that has a "code" URL in KNOWLEDGE, always include that source-code URL when describing or listing the project.
+- Never omit a supplied project "code" URL.
+- For source-code links, use the label "View Source Code".
+- For the resume, output exactly /Resume.GM9.pdf on its own line.
 - Preserve supplied mailto: and tel: links for email and phone.
-- Never wrap URLs or /Resume.GMs.pdf in bold markers or punctuation.
+- Never wrap URLs or /Resume.GM9.pdf in bold markers or punctuation.
 - Use only links supplied in KNOWLEDGE. Never invent links.
 - Union Add and Apki Manzil have live website links only.
 - Never provide or invent source-code links for those two projects.
@@ -285,6 +290,8 @@ RESPONSE RULES:
 - If a detail is unavailable, say so briefly and suggest contacting Ghulam.
 - Do not promise search rankings, AI citations, or business outcomes.
 - Answer in the user's language when practical; preserve names and URLs.
+- For GitHub or source-code requests, share the exact GitHub profile URL from KNOWLEDGE.
+- When listing projects, include each project's supplied GitHub repository URL when available.
 
 COMMON REQUESTS:
 - "Show my Projects": list the projects clearly with brief descriptions.
