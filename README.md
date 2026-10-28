@@ -4,7 +4,7 @@
 
 The website showcases full-stack development, AI/ML integrations, business systems, e-commerce applications, dashboards, SEO/GEO/AEO, entity optimization, and digital services.
 
-🌐 **Live Website:** https://gmcodes9.com
+🌐 **Live Website:** https://www.gmcodes9.com
 
 ---
 
@@ -335,7 +335,7 @@ Unless otherwise stated, the source code, branding, content, images, and project
 
 Lahore, Pakistan
 
-🌐 https://gmcodes9.com
+🌐 https://www.gmcodes9.com
 
 📧 yunusbutt676@gmail.com
 

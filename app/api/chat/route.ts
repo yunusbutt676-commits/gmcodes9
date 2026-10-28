@@ -9,7 +9,7 @@ const PROFILE = {
   title: "Full Stack Engineer",
   experience: "4+ years",
   location: "Lahore, Pakistan",
-  website: "https://gmcodes9.com",
+  website: "https://www.gmcodes9.com",
   email: "yunusbutt676@gmail.com",
   emailLink: "mailto:yunusbutt676@gmail.com",
   phone: "+92-304-5478602",
@@ -31,15 +31,15 @@ const SOCIALS = {
 };
 
 const SECTIONS = {
-  About: "https://gmcodes9.com/#about-gmcodes9",
-  Skills: "https://gmcodes9.com/#skills",
-  Services: "https://gmcodes9.com/services",
-  Projects: "https://gmcodes9.com/#projects",
-  "AI / ML": "https://gmcodes9.com/#ai-ml",
-  Experience: "https://gmcodes9.com/#experience",
-  Education: "https://gmcodes9.com/#education",
-  Testimonials: "https://gmcodes9.com/#reviews",
-  Contact: "https://gmcodes9.com/#contact",
+  About: "https://www.gmcodes9.com/#about-gmcodes9",
+  Skills: "https://www.gmcodes9.com/#skills",
+  Services: "https://www.gmcodes9.com/services",
+  Projects: "https://www.gmcodes9.com/#projects",
+  "AI / ML": "https://www.gmcodes9.com/#ai-ml",
+  Experience: "https://www.gmcodes9.com/#experience",
+  Education: "https://www.gmcodes9.com/#education",
+  Testimonials: "https://www.gmcodes9.com/#reviews",
+  Contact: "https://www.gmcodes9.com/#contact",
 };
 
 const SKILLS = {

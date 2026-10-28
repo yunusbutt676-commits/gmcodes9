@@ -10,7 +10,7 @@ import {
   Target, Users, Workflow, Wrench, Zap,
 } from "lucide-react";
 
-const SITE_URL = "https://gmcodes9.com";
+const SITE_URL = "https://www.gmcodes9.com";
 const PAGE_URL = `${SITE_URL}/services`;
 
 const WHATSAPP_URL =

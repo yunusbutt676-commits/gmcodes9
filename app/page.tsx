@@ -3,13 +3,13 @@ import Portfolio from "../components/Portfolio";
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "@id": "https://gmcodes9.com/#person",
+  "@id": "https://www.gmcodes9.com/#person",
 
   "name": "Ghulam Mustafa",
   "alternateName": "GmCodes9",
 
-  "url": "https://gmcodes9.com/",
-  "image": "https://gmcodes9.com/Images/gm.png",
+  "url": "https://www.gmcodes9.com/",
+  "image": "https://www.gmcodes9.com/Images/gm.png",
 
   "jobTitle": "Full Stack Engineer",
 

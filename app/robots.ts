@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://gmcodes9.com/sitemap.xml",
-    host: "https://gmcodes9.com",
+    sitemap: "https://www.gmcodes9.com/sitemap.xml",
+    host: "https://www.gmcodes9.com",
   };
 }

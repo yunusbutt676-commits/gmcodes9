@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ChatAssistant from "@/components/ChatAssistant";
 
-const SITE_URL = "https://gmcodes9.com";
+const SITE_URL = "https://www.gmcodes9.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

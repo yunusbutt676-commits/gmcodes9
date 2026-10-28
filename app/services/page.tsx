@@ -15,19 +15,19 @@ export const metadata: Metadata = {
   description,
 
   alternates: {
-    canonical: "https://gmcodes9.com/services",
+    canonical: "https://www.gmcodes9.com/services",
   },
 
   openGraph: {
     type: "website",
-    url: "https://gmcodes9.com/services",
+    url: "https://www.gmcodes9.com/services",
     title: `${title} | GmCodes9`,
     description: socialDescription,
     siteName: "GmCodes9",
     locale: "en_US",
     images: [
       {
-        url: "https://gmcodes9.com/og.png",
+        url: "https://www.gmcodes9.com/og.png",
         width: 1200,
         height: 628,
         alt: "GmCodes9 — Web Development, SEO/GEO/AEO, AI & Digital Services",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: socialDescription,
     images: [
       {
-        url: "https://gmcodes9.com/og.png",
+        url: "https://www.gmcodes9.com/og.png",
         alt: "GmCodes9 — Web Development, SEO/GEO/AEO, AI & Digital Services",
       },
     ],
