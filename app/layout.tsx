@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og.png",
+        url: "/og.jpeg",
         width: 1200,
         height: 628,
         alt: "Ghulam Mustafa — Full Stack Engineer",
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
       "Ghulam Mustafa | Full Stack Engineer • Next.js • React • AI/ML • Laravel",
     description:
       "Ghulam Mustafa — Full Stack Engineer specializing in Next.js, React, Node.js, Python, FastAPI, Laravel, and AI/ML integrations.",
-    images: ["/og.png"],
+    images: ["/og.jpeg"],
   },
 
   icons: {
