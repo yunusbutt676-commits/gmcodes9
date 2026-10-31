@@ -147,7 +147,7 @@ export default function Navbar() {
         >
           <span className="gm-nav-avatar">
             <Image
-              src="/Images/gm.png"
+              src="/omg.jpeg"
               alt="Ghulam Mustafa"
               width={40}
               height={40}

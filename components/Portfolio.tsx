@@ -38,7 +38,7 @@ const PROFILE = {
   phone: "+92-304-5478602",
   summary:
     "Full Stack Engineer 4+ years of experience in specializing modern web applications, RESTful APIs, AI/ML integrations, and scalable backend systems. Experienced with Next.js, React, Node.js, TypeScript, Laravel, Python, Django, Flask, FastAPI, MongoDB, and MySQL. Builds production-ready applications across full-stack development, AI-powered platforms, dashboards, e-commerce, and real-time systems.",
-  avatar: "/Images/gm.png",
+  avatar: "/omg.jpeg",
 };
 
 const LINKS = {
