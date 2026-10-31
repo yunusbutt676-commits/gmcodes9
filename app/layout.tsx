@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     title:
-      "Ghulam Mustafa | Full Stack Engineer • Next.js • React • AI/ML",
+      "Ghulam Mustafa | Full Stack Engineer • Next.js • React • AI/ML • Laravel",
     description:
       "Ghulam Mustafa — Full Stack Engineer specializing in Next.js, React, Node.js, Python, FastAPI, Laravel, AI/ML integrations, and modern web applications.",
     siteName: "GmCodes9",
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Ghulam Mustafa | Full Stack Engineer • Next.js • React • AI/ML",
+      "Ghulam Mustafa | Full Stack Engineer • Next.js • React • AI/ML • Laravel",
     description:
       "Ghulam Mustafa — Full Stack Engineer specializing in Next.js, React, Node.js, Python, FastAPI, Laravel, and AI/ML integrations.",
     images: ["/og.png"],

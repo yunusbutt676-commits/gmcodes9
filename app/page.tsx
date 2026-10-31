@@ -9,7 +9,7 @@ const personSchema = {
   "alternateName": "GmCodes9",
 
   "url": "https://www.gmcodes9.com/",
-  "image": "https://www.gmcodes9.com/Images/gm.png",
+  "image": "https://www.gmcodes9.com/Images/omg.jpeg",
 
   "jobTitle": "Full Stack Engineer",
 
