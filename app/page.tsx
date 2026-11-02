@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Portfolio from "../components/Portfolio";
+
+export const metadata: Metadata = {
+  description:
+    "GmCodes9 provides web development, AI integrations, and SEO, GEO & AEO services in Lahore, Pakistan, for local and international businesses.",
+};
 
 const personSchema = {
   "@context": "https://schema.org",

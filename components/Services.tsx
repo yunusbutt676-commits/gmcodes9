@@ -492,7 +492,7 @@ function Heading({
   return (
     <div className="gs-heading">
       <p className="gs-eyebrow">{eyebrow}</p>
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       {children && <p className="gs-copy">{children}</p>}
     </div>
   );
@@ -529,10 +529,13 @@ export default function Services() {
               GmCodes9 Digital Services
             </div>
 
-            <h2 id="services-heading">
-              Build. Rank.<br className="gs-mobile-break" /> Promote.{" "}
-              <span className="gs-gradient">Grow.</span>
-            </h2>
+            <h1 id="services-heading">
+              Web Development, AI & SEO Services
+              <br className="gs-mobile-break" />{" "}
+              <span className="gs-gradient">
+                for Lahore & Worldwide Clients
+              </span>
+            </h1>
 
             <p className="gs-hero-description">
               GmCodes9 provides complete digital solutions ranging from modern
@@ -597,7 +600,7 @@ export default function Services() {
         >
           <div>
             <p className="gs-eyebrow">The person behind GmCodes9</p>
-            <h3>Ghulam Mustafa · Full Stack Engineer</h3>
+            <h2>Ghulam Mustafa · Full Stack Engineer</h2>
             <p className="gs-copy">
               Based in Lahore, Pakistan, with 4+ years of experience.
               Providing full-stack web development, AI integrations and digital
@@ -641,7 +644,7 @@ export default function Services() {
                 aria-labelledby={`${service.id}-title`}
               >
                 <IconBox icon={service.icon} />
-                <h4 id={`${service.id}-title`}>{service.title}</h4>
+                <h3 id={`${service.id}-title`}>{service.title}</h3>
                 <p className="gs-copy">{service.description}</p>
 
                 <ul className="gs-features">
@@ -681,9 +684,9 @@ export default function Services() {
                 <Search size={15} aria-hidden="true" />
                 SEO / GEO / AEO / Entity
               </p>
-              <h3 className="gs-large-title">
+              <h2 className="gs-large-title">
                 Built to be understood by people, search engines and AI systems.
-              </h3>
+              </h2>
               <p className="gs-copy">
                 Advanced website projects can include SEO/GEO/AEO foundations:
                 technical SEO, clear answers, structured data, entity relationships,
@@ -755,7 +758,7 @@ export default function Services() {
                 style={tone(index)}
               >
                 <IconBox icon={item.icon} />
-                <h4>{item.title}</h4>
+                <h3>{item.title}</h3>
                 <p className="gs-copy">{item.description}</p>
               </article>
             ))}
@@ -815,7 +818,7 @@ export default function Services() {
                 <span className="gs-step-number" aria-hidden="true">
                   0{index + 1}
                 </span>
-                <h4>{step.title}</h4>
+                <h3>{step.title}</h3>
                 <p className="gs-copy">{step.description}</p>
               </li>
             ))}
@@ -830,7 +833,7 @@ export default function Services() {
               style={tone(index)}
             >
               <IconBox icon={level.icon} />
-              <h4>{level.title}</h4>
+              <h3>{level.title}</h3>
               <p className="gs-copy">{level.description}</p>
             </article>
           ))}
@@ -889,9 +892,9 @@ export default function Services() {
           <div className="gs-final-content">
             <IconBox icon={MessageCircle} />
             <p className="gs-eyebrow">Start Your Project</p>
-            <h3>
+            <h2>
               Need a website, application, AI solution or digital growth service?
-            </h3>
+            </h2>
             <p>
               Share your requirements directly for full-stack development,
               e-commerce, CRM/CMS systems, AI/ML integrations, SEO/GEO/AEO,
@@ -955,9 +958,9 @@ export default function Services() {
         .gm-services *::before,
         .gm-services *::after { box-sizing: border-box; }
 
+        .gm-services h1,
         .gm-services h2,
         .gm-services h3,
-        .gm-services h4,
         .gm-services p { margin: 0; }
 
         .gm-services ul,
@@ -1055,7 +1058,7 @@ export default function Services() {
         .gm-services .gs-label svg { color: var(--a); }
         .dark .gm-services .gs-label svg { color: #c4b5fd; }
 
-        .gm-services .gs-hero h2 {
+        .gm-services .gs-hero h1 {
           margin-top: 24px;
           font-size: clamp(2.35rem, 6.8vw, 5.1rem);
           font-weight: 800;
@@ -1252,7 +1255,7 @@ export default function Services() {
 
         .gm-services .gs-provider > div { max-width: 760px; min-width: 0; }
 
-        .gm-services .gs-provider h3 {
+        .gm-services .gs-provider h2 {
           margin-top: 7px;
           font-size: 19px;
           font-weight: 700;
@@ -1295,7 +1298,7 @@ export default function Services() {
           min-width: 0;
         }
 
-        .gm-services .gs-heading h3,
+        .gm-services .gs-heading h2,
         .gm-services .gs-large-title {
           margin-top: 12px;
           font-size: clamp(1.6rem, 3.5vw, 2.65rem);
@@ -1320,7 +1323,7 @@ export default function Services() {
           padding: 26px;
         }
 
-        .gm-services .gs-card h4 {
+        .gm-services .gs-card h3 {
           margin-top: 22px;
           font-size: 20px;
           font-weight: 700;
@@ -1579,7 +1582,7 @@ export default function Services() {
         .gm-services .gs-final-content { position: relative; }
         .gm-services .gs-final .gs-eyebrow { margin-top: 23px; color: #c4b5fd; }
 
-        .gm-services .gs-final h3 {
+        .gm-services .gs-final h2 {
           max-width: 850px;
           margin: 15px auto 0;
           font-size: clamp(1.8rem, 4.5vw, 3.2rem);
@@ -1713,7 +1716,7 @@ export default function Services() {
           .gm-services .gs-service-card,
           .gm-services .gs-small-card { padding: 22px; }
           .gm-services .gs-card { border-radius: 20px; }
-          .gm-services .gs-card h4 { font-size: 19px; }
+          .gm-services .gs-card h3 { font-size: 19px; }
           .gm-services .gs-industries { grid-template-columns: repeat(2, minmax(0, 1fr)); }
           .gm-services .gs-industry { padding: 18px; }
           .gm-services .gs-faq-grid { grid-template-columns: minmax(0, 1fr); }

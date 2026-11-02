@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Services from "@/components/Services";
 import ChatAssistant from "@/components/ChatAssistant";
 
-const title = "Full Stack Web Development, SEO/GEO/AEO, AI & Digital Services";
+const title = "Web Development, AI & SEO | Lahore & Worldwide";
 
 const description =
-  "Explore GmCodes9 services by Ghulam Mustafa: full-stack web development, SEO/GEO/AEO, entity optimization, AI/ML, e-commerce, CRM, dashboards and digital marketing.";
+  "GmCodes9 provides full-stack web development, Next.js applications, AI integrations and SEO/GEO/AEO services from Lahore for businesses worldwide.";
 
 const socialDescription =
-  "Full-stack development, SEO/GEO/AEO, entity optimization, AI integrations, e-commerce, business systems, SMM, Meta Ads and Google Ads.";
+  "Full-stack web development, Next.js apps, AI integrations, SEO/GEO/AEO and digital marketing for Lahore businesses and international clients.";
 
 export const metadata: Metadata = {
   title,
