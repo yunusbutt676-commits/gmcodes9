@@ -127,7 +127,7 @@ const PROJECTS: Project[] = [
     description:
       "Official production platform for a full-service advertising and digital marketing agency. Built as a complete digital presence with an OpenAI-powered AI assistant, intelligent quote workflow, MongoDB-backed functionality, service and portfolio experiences, WhatsApp integration, advanced SEO/GEO architecture, dark mode, and responsive performance.",
     stack: ["Next.js", "TypeScript", "TailwindCSS", "MongoDB", "OpenAI API"],
-    links: { live: "https://union-add.vercel.app" },
+    links: { live: "https://unionadd.com/" },
     images: ["/Images/ua1.png", "/Images/ua2.png", "/Images/ua3.png", "/Images/ua4.png", "/Images/ua5.png", "/Images/ua6.png", "/Images/ua7.png", "/Images/ua8.png"],
   },
   {
