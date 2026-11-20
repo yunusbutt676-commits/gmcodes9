@@ -1,36 +1,41 @@
 import type { Metadata } from "next";
 import Services from "@/components/Services";
-import ChatAssistant from "@/components/ChatAssistant";
 
-const title = "Web Development, AI & SEO | Lahore & Worldwide";
+const SITE_URL = "https://www.gmcodes9.com";
+
+const title =
+  "Web Development, AI, SEO & Digital Marketing Services | Lahore & Worldwide | GmCodes9";
 
 const description =
-  "GmCodes9 provides full-stack web development, Next.js applications, AI integrations and SEO/GEO/AEO services from Lahore for businesses worldwide.";
+  "GmCodes9 provides full-stack web development, Next.js, React, Node.js, Python, Laravel, AI and LLM integrations, SEO, GEO, AEO, entity SEO, and digital marketing services in Lahore, Pakistan and for international clients.";
 
 const socialDescription =
-  "Full-stack web development, Next.js apps, AI integrations, SEO/GEO/AEO and digital marketing for Lahore businesses and international clients.";
+  "Full-stack web development, AI and LLM integrations, SEO, GEO, AEO, entity SEO and digital marketing services for Lahore businesses and international clients.";
 
 export const metadata: Metadata = {
   title,
+
   description,
 
   alternates: {
-    canonical: "https://www.gmcodes9.com/services",
+    canonical: `${SITE_URL}/services`,
   },
 
   openGraph: {
     type: "website",
-    url: "https://www.gmcodes9.com/services",
+    url: `${SITE_URL}/services`,
     title: `${title} | GmCodes9`,
     description: socialDescription,
     siteName: "GmCodes9",
     locale: "en_US",
+
     images: [
       {
-        url: "https://www.gmcodes9.com/og.png",
+        url: `${SITE_URL}/og.png`,
         width: 1200,
         height: 628,
-        alt: "GmCodes9 — Web Development, SEO/GEO/AEO, AI & Digital Services",
+        alt:
+          "GmCodes9 — Web Development, AI, SEO, GEO, AEO & Digital Marketing Services",
       },
     ],
   },
@@ -39,20 +44,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${title} | GmCodes9`,
     description: socialDescription,
-    images: [
-      {
-        url: "https://www.gmcodes9.com/og.png",
-        alt: "GmCodes9 — Web Development, SEO/GEO/AEO, AI & Digital Services",
-      },
-    ],
+    images: [`${SITE_URL}/og.png`],
   },
 };
 
 export default function ServicesPage() {
-  return (
-    <>
-      <Services />
-      <ChatAssistant />
-    </>
-  );
+  return <Services />;
 }

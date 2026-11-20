@@ -259,6 +259,7 @@ const EXPERIENCE = [
     role: "Full Stack Engineer",
     company: "Union Add Advertisement Company",
     period: "July 2026 – Present",
+    type: "Contract",
     points: [
       "Develop and maintain scalable full-stack web applications using MERN, MEAN, Laravel, Django, Flask, and FastAPI technologies.",
       "Design and integrate secure RESTful APIs, authentication systems, role-based access control, and database-driven application features.",

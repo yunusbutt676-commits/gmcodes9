@@ -1,13 +1,39 @@
 import type { CSSProperties, ReactNode } from "react";
 import type { LucideIcon } from "lucide-react";
 import {
-  ArrowRight, BadgeCheck, BarChart3, Blocks, Bot,
-  BriefcaseBusiness, Check, CheckCircle2, ChevronDown,
-  Code2, Database, Gauge, Globe2, GraduationCap,
-  HeartPulse, Layers3, LayoutDashboard, Megaphone,
-  MessageCircle, MonitorSmartphone, Plug, Rocket,
-  Search, ShieldCheck, ShoppingCart, Sparkles,
-  Target, Users, Workflow, Wrench, Zap,
+  ArrowRight,
+  ArrowUp,
+  BadgeCheck,
+  BarChart3,
+  Blocks,
+  Bot,
+  BriefcaseBusiness,
+  Check,
+  CheckCircle2,
+  ChevronDown,
+  Code2,
+  Database,
+  Gauge,
+  Globe2,
+  GraduationCap,
+  HeartPulse,
+  Home,
+  Layers3,
+  LayoutDashboard,
+  Megaphone,
+  MessageCircle,
+  MonitorSmartphone,
+  Plug,
+  Rocket,
+  Search,
+  ShieldCheck,
+  ShoppingCart,
+  Sparkles,
+  Target,
+  Users,
+  Workflow,
+  Wrench,
+  Zap,
 } from "lucide-react";
 
 const SITE_URL = "https://www.gmcodes9.com";
@@ -22,200 +48,339 @@ type Service = {
   description: string;
   icon: LucideIcon;
   features: string[];
+  href: string;
 };
 
 const services: Service[] = [
   {
     id: "full-stack-web-development",
     title: "Full Stack Web Development",
+    href: "/services/full-stack-development",
     description:
       "Modern, responsive and production-ready websites and web applications built around real business requirements, from focused projects to advanced platforms.",
     icon: Code2,
     features: [
-      "Next.js & React", "Angular", "Node.js & Express", "TypeScript",
-      "Laravel & PHP", "Django", "Flask", "FastAPI", "REST APIs",
-      "MySQL & MongoDB", "Authentication", "Role-Based Access",
+      "Next.js & React",
+      "Angular",
+      "Node.js & Express",
+      "TypeScript",
+      "Laravel & PHP",
+      "Django",
+      "Flask",
+      "FastAPI",
+      "REST APIs",
+      "MySQL & MongoDB",
+      "Authentication",
+      "Role-Based Access",
     ],
   },
   {
     id: "seo-geo-entity",
     title: "SEO, GEO, AEO & Entity Optimization",
+    href: "/services/seo",
     description:
       "Advanced technical and content foundations designed to help search engines and AI systems understand your website, brand, services and entity relationships more clearly.",
     icon: Search,
     features: [
-      "Technical SEO", "On-Page SEO", "GEO Optimization", "AEO Optimization",
-      "Entity Optimization", "JSON-LD", "Open Graph", "Canonical URLs",
-      "Robots.txt", "XML Sitemap", "Search Console", "Bing Webmaster",
+      "Technical SEO",
+      "On-Page SEO",
+      "GEO Optimization",
+      "AEO Optimization",
+      "Entity Optimization",
+      "JSON-LD",
+      "Open Graph",
+      "Canonical URLs",
+      "Robots.txt",
+      "XML Sitemap",
+      "Search Console",
+      "Bing Webmaster",
       "Internal Linking",
     ],
   },
   {
     id: "ai-ml-integrations",
     title: "AI & ML Integrations",
+    href: "/services/ai-development",
     description:
       "Practical AI and machine-learning capabilities integrated into websites, applications, dashboards and business workflows.",
     icon: Bot,
     features: [
-      "AI Chatbots", "AI Assistants", "NLP", "Computer Vision",
-      "Recommendation Systems", "AI Search", "AI API Integration",
-      "Groq Integration", "Automation", "AI Dashboards",
-      "Smart Features", "Custom AI Workflows",
+      "AI Chatbots",
+      "AI Assistants",
+      "NLP",
+      "Computer Vision",
+      "Recommendation Systems",
+      "AI Search",
+      "AI API Integration",
+      "Groq Integration",
+      "Automation",
+      "AI Dashboards",
+      "Smart Features",
+      "Custom AI Workflows",
     ],
   },
   {
     id: "ecommerce-development",
     title: "E-Commerce Development",
+    href: "/services/ecommerce-development",
     description:
       "Complete online stores with customer accounts, product management, payments, orders, administration and scalable business workflows.",
     icon: ShoppingCart,
     features: [
-      "Product Management", "Categories", "Cart", "Checkout",
-      "Customer Accounts", "Order Management", "Payment Gateways",
-      "Stripe", "Inventory", "Admin Panel", "Analytics",
+      "Product Management",
+      "Categories",
+      "Cart",
+      "Checkout",
+      "Customer Accounts",
+      "Order Management",
+      "Payment Gateways",
+      "Stripe",
+      "Inventory",
+      "Admin Panel",
+      "Analytics",
       "Responsive Storefront",
     ],
   },
   {
     id: "crm-admin-dashboard",
     title: "CRM, Admin Panels & Dashboards",
+    href: "/services/crm-dashboard-development",
     description:
       "Custom business platforms for managing customers, employees, operations, analytics, reporting and day-to-day workflows.",
     icon: LayoutDashboard,
     features: [
-      "CRM Systems", "Admin Panels", "Business Dashboards",
-      "Role-Based Portals", "Analytics", "Reports", "Customer Management",
-      "Employee Management", "CRUD Systems", "Notifications",
-      "Workflow Automation", "Data Management",
+      "CRM Systems",
+      "Admin Panels",
+      "Business Dashboards",
+      "Role-Based Portals",
+      "Analytics",
+      "Reports",
+      "Customer Management",
+      "Employee Management",
+      "CRUD Systems",
+      "Notifications",
+      "Workflow Automation",
+      "Data Management",
     ],
   },
   {
     id: "management-systems",
     title: "Custom Management Systems",
+    href: "/services/custom-web-app-development",
     description:
       "Purpose-built management systems designed around the real operational requirements of organizations and institutions.",
     icon: Database,
     features: [
-      "Hospital Systems", "School Systems", "College Systems",
-      "Inventory Systems", "Employee Systems", "Customer Systems",
-      "Attendance", "Records Management", "Billing Workflows",
-      "Reporting", "Role Management", "Admin Control",
+      "Healthcare Systems",
+      "School Systems",
+      "College Systems",
+      "Inventory Systems",
+      "Employee Systems",
+      "Customer Systems",
+      "Attendance",
+      "Records Management",
+      "Billing Workflows",
+      "Reporting",
+      "Role Management",
+      "Admin Control",
     ],
   },
   {
     id: "cms-development",
     title: "CMS & Content Platforms",
+    href: "/services/web-development",
     description:
       "Flexible content-management systems that allow businesses to manage pages, content, media and publishing without touching application code.",
     icon: Layers3,
     features: [
-      "Custom CMS", "Content Management", "Blog Systems", "Dynamic Pages",
-      "Media Management", "Role-Based Publishing", "Admin Controls",
-      "API-Driven Content", "SEO / GEO / AEO Content Fields",
-      "Categories", "Search", "Content Workflows",
+      "Custom CMS",
+      "Content Management",
+      "Blog Systems",
+      "Dynamic Pages",
+      "Media Management",
+      "Role-Based Publishing",
+      "Admin Controls",
+      "API-Driven Content",
+      "SEO / GEO / AEO Content Fields",
+      "Categories",
+      "Search",
+      "Content Workflows",
     ],
   },
   {
     id: "business-websites",
     title: "Business Websites",
+    href: "/services/web-development",
     description:
       "Professional websites designed to establish credibility, present services clearly and turn visitors into real enquiries.",
     icon: BriefcaseBusiness,
     features: [
-      "Company Websites", "Corporate Websites", "Service Websites",
-      "Startup Websites", "Local Business Websites", "Contact Forms",
-      "Lead Generation", "WhatsApp CTA", "SEO / GEO / AEO Structure",
-      "Analytics", "Responsive Design", "Deployment",
+      "Company Websites",
+      "Corporate Websites",
+      "Service Websites",
+      "Startup Websites",
+      "Local Business Websites",
+      "Contact Forms",
+      "Lead Generation",
+      "WhatsApp CTA",
+      "SEO / GEO / AEO Structure",
+      "Analytics",
+      "Responsive Design",
+      "Deployment",
     ],
   },
   {
     id: "landing-pages",
     title: "Landing Pages",
+    href: "/services/web-development",
     description:
       "Focused, fast and conversion-oriented pages for products, services, advertising campaigns and lead generation.",
     icon: Rocket,
     features: [
-      "Service Landing Pages", "Product Pages", "Campaign Pages",
-      "Lead Forms", "CTA Strategy", "Responsive UI", "Analytics",
-      "Ad Alignment", "Fast Loading", "SEO / GEO / AEO Setup",
-      "WhatsApp CTA", "Conversion Focus",
+      "Service Landing Pages",
+      "Product Pages",
+      "Campaign Pages",
+      "Lead Forms",
+      "CTA Strategy",
+      "Responsive UI",
+      "Analytics",
+      "Ad Alignment",
+      "Fast Loading",
+      "SEO / GEO / AEO Setup",
+      "WhatsApp CTA",
+      "Conversion Focus",
     ],
   },
   {
     id: "portfolio-websites",
     title: "Portfolio Websites",
+    href: "/services/web-development",
     description:
       "Modern personal and professional websites for developers, freelancers, creators, consultants and other professionals.",
     icon: Users,
     features: [
-      "Personal Branding", "Project Showcase", "Skills Sections",
-      "Experience", "Education", "Client Reviews", "Social Profiles",
-      "Contact CTA", "SEO / GEO / AEO & Entity Setup", "Open Graph",
-      "Responsive UI", "Live Deployment",
+      "Personal Branding",
+      "Project Showcase",
+      "Skills Sections",
+      "Experience",
+      "Education",
+      "Client Reviews",
+      "Social Profiles",
+      "Contact CTA",
+      "SEO / GEO / AEO & Entity Setup",
+      "Open Graph",
+      "Responsive UI",
+      "Live Deployment",
     ],
   },
   {
     id: "social-media-management",
     title: "Social Media Management",
+    href: "/services/social-media-marketing",
     description:
       "Consistent social-media management focused on professional brand presentation, content planning and organic digital growth.",
     icon: Megaphone,
     features: [
-      "Profile Optimization", "Content Strategy", "Content Planning",
-      "Post Captions", "Content Calendar", "Brand Consistency",
-      "Organic Strategy", "Platform Planning", "Post Optimization",
-      "Performance Review", "CTA Strategy", "Audience Focus",
+      "Profile Optimization",
+      "Content Strategy",
+      "Content Planning",
+      "Post Captions",
+      "Content Calendar",
+      "Brand Consistency",
+      "Organic Strategy",
+      "Platform Planning",
+      "Post Optimization",
+      "Performance Review",
+      "CTA Strategy",
+      "Audience Focus",
     ],
   },
   {
     id: "meta-ads",
     title: "Meta & Social Media Ads",
+    href: "/services/meta-ads",
     description:
       "Facebook and Instagram advertising campaigns structured around awareness, enquiries, leads, traffic and measurable business objectives.",
     icon: Target,
     features: [
-      "Meta Ads Setup", "Facebook Ads", "Instagram Ads",
-      "Audience Research", "Lead Campaigns", "Traffic Campaigns",
-      "WhatsApp Campaigns", "Creative Strategy", "Ad Copy",
-      "Campaign Testing", "Optimization", "Reporting",
+      "Meta Ads Setup",
+      "Facebook Ads",
+      "Instagram Ads",
+      "Audience Research",
+      "Lead Campaigns",
+      "Traffic Campaigns",
+      "WhatsApp Campaigns",
+      "Creative Strategy",
+      "Ad Copy",
+      "Campaign Testing",
+      "Optimization",
+      "Reporting",
     ],
   },
   {
     id: "google-ads",
     title: "Google Ads",
+    href: "/services/google-ads",
     description:
       "Search advertising focused on connecting businesses with people actively looking for relevant products and services.",
     icon: BarChart3,
     features: [
-      "Campaign Setup", "Keyword Research", "Search Campaigns",
-      "Negative Keywords", "Ad Groups", "Ad Copy", "Landing Alignment",
-      "Conversion Strategy", "Audience Signals", "Optimization",
-      "Monitoring", "Reporting",
+      "Campaign Setup",
+      "Keyword Research",
+      "Search Campaigns",
+      "Negative Keywords",
+      "Ad Groups",
+      "Ad Copy",
+      "Landing Alignment",
+      "Conversion Strategy",
+      "Audience Signals",
+      "Optimization",
+      "Monitoring",
+      "Reporting",
     ],
   },
   {
     id: "third-party-integrations",
     title: "Third-Party Integrations",
+    href: "/services/custom-web-app-development",
     description:
       "Connect websites and applications with external APIs, authentication providers, payments, AI platforms, communication tools and business services.",
     icon: Plug,
     features: [
-      "REST APIs", "Stripe", "Payment Gateways", "Google Sign-In",
-      "Social Login", "AI APIs", "Email Services", "Analytics",
-      "WhatsApp", "Webhooks", "External APIs", "Custom Integrations",
+      "REST APIs",
+      "Stripe",
+      "Payment Gateways",
+      "Google Sign-In",
+      "Social Login",
+      "AI APIs",
+      "Email Services",
+      "Analytics",
+      "WhatsApp",
+      "Webhooks",
+      "External APIs",
+      "Custom Integrations",
     ],
   },
   {
     id: "deployment-maintenance",
     title: "Deployment, Maintenance & Updates",
+    href: "/services/full-stack-development",
     description:
       "Production deployment, updates and ongoing technical improvements so completed projects continue working beyond launch day.",
     icon: Wrench,
     features: [
-      "Vercel Deployment", "Render Deployment", "Domain Setup",
-      "Environment Variables", "Production Builds", "Bug Fixes",
-      "Feature Updates", "Content Updates", "Performance Checks",
-      "SEO / GEO / AEO Updates", "API Maintenance", "Technical Support",
+      "Vercel Deployment",
+      "Render Deployment",
+      "Domain Setup",
+      "Environment Variables",
+      "Production Builds",
+      "Bug Fixes",
+      "Feature Updates",
+      "Content Updates",
+      "Performance Checks",
+      "SEO / GEO / AEO Updates",
+      "API Maintenance",
+      "Technical Support",
     ],
   },
 ];
@@ -269,25 +434,72 @@ const industries = [
 ];
 
 const technologies = [
-  "Next.js", "React", "Angular", "Node.js", "Express.js", "TypeScript",
-  "JavaScript", "Laravel", "PHP", "Python", "Django", "Flask", "FastAPI",
-  "MongoDB", "MySQL", "REST APIs", "Tailwind CSS", "Bootstrap", "Stripe",
-  "AI/ML", "TensorFlow", "PyTorch", "NLP", "Vercel", "Render",
+  "Next.js",
+  "React",
+  "Angular",
+  "Node.js",
+  "Express.js",
+  "TypeScript",
+  "JavaScript",
+  "Laravel",
+  "PHP",
+  "Python",
+  "Django",
+  "Flask",
+  "FastAPI",
+  "MongoDB",
+  "MySQL",
+  "REST APIs",
+  "Tailwind CSS",
+  "Bootstrap",
+  "Stripe",
+  "AI/ML",
+  "NLP",
+  "Vercel",
+  "Render",
 ];
 
 const overview = [
-  { label: "Development", value: "Web & Applications", icon: Code2 },
-  { label: "Visibility", value: "SEO / GEO / AEO / Entity", icon: Search },
-  { label: "Intelligence", value: "AI / ML Integration", icon: Bot },
-  { label: "Growth", value: "SMM & Advertising", icon: Target },
+  {
+    label: "Development",
+    value: "Web & Applications",
+    icon: Code2,
+  },
+  {
+    label: "Visibility",
+    value: "SEO / GEO / AEO / Entity",
+    icon: Search,
+  },
+  {
+    label: "Intelligence",
+    value: "AI / ML Integration",
+    icon: Bot,
+  },
+  {
+    label: "Growth",
+    value: "SMM & Advertising",
+    icon: Target,
+  },
 ];
 
 const searchFeatures = [
-  "Technical SEO", "On-Page SEO", "GEO Optimization", "AEO Optimization",
-  "Person / Brand Entity", "JSON-LD Structured Data", "sameAs Connections",
-  "Open Graph", "Canonical URLs", "Sitemap.xml", "Robots.txt",
-  "Search Console", "Bing Webmaster", "Internal Linking",
-  "Image Optimization", "Performance Checks", "Accessibility",
+  "Technical SEO",
+  "On-Page SEO",
+  "GEO Optimization",
+  "AEO Optimization",
+  "Person / Brand Entity",
+  "JSON-LD Structured Data",
+  "sameAs Connections",
+  "Open Graph",
+  "Canonical URLs",
+  "Sitemap.xml",
+  "Robots.txt",
+  "Search Console",
+  "Bing Webmaster",
+  "Internal Linking",
+  "Image Optimization",
+  "Performance Checks",
+  "Accessibility",
 ];
 
 const process = [
@@ -377,7 +589,8 @@ const faqs = [
       "The included features depend on the agreed proposal. Advanced SEO/GEO/AEO, AI integrations, advertising and ongoing management can be added where needed. Confirm the deliverables and recurring costs before starting.",
   },
   {
-    question: "Can you integrate payments, login systems and AI assistants?",
+    question:
+      "Can you integrate payments, login systems and AI assistants?",
     answer:
       "Yes. Depending on the project, integrations can include Stripe, authentication, Google Sign-In, role-based access, external APIs, webhooks and AI assistants. Provider availability, account requirements and usage fees are reviewed during planning.",
   },
@@ -416,36 +629,61 @@ function tone(index = 0): CSSProperties {
   } as CSSProperties;
 }
 
+/*
+ * Service structured data intentionally references the global GmCodes9
+ * Organization entity rather than redefining the Person entity here.
+ *
+ * The Organization and Person entities should be defined once in the
+ * site's global/homepage entity graph:
+ *
+ * https://www.gmcodes9.com/#organization
+ * https://www.gmcodes9.com/#person
+ */
 const serviceSchema = services.map((service) => ({
   "@type": "Service",
-  "@id": `${SITE_URL}/#service-${service.id}`,
+  "@id": `${PAGE_URL}#service-${service.id}`,
   name: service.title,
   serviceType: service.title,
   description: service.description,
-  url: `${PAGE_URL}#${service.id}`,
-  provider: { "@id": `${SITE_URL}/#person` },
+  url: `${SITE_URL}${service.href}`,
+  provider: {
+    "@id": `${SITE_URL}/#organization`,
+  },
   areaServed: [
-    { "@type": "Country", name: "Pakistan" },
-    { "@type": "Place", name: "Worldwide" },
+    {
+      "@type": "Country",
+      name: "Pakistan",
+    },
+    {
+      "@type": "Country",
+      name: "United States",
+    },
+    {
+      "@type": "Country",
+      name: "United Kingdom",
+    },
+    {
+      "@type": "Country",
+      name: "Canada",
+    },
+    {
+      "@type": "Country",
+      name: "Australia",
+    },
+    {
+      "@type": "Country",
+      name: "United Arab Emirates",
+    },
+    {
+      "@type": "Country",
+      name: "Saudi Arabia",
+    },
   ],
 }));
 
 const servicesStructuredData = {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "Person",
-      "@id": `${SITE_URL}/#person`,
-      name: "Ghulam Mustafa",
-      alternateName: "GmCodes9",
-      url: SITE_URL,
-      jobTitle: "Full Stack Engineer",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Lahore",
-        addressCountry: "PK",
-      },
-    },
     {
       "@type": "CollectionPage",
       "@id": `${PAGE_URL}#webpage`,
@@ -454,8 +692,15 @@ const servicesStructuredData = {
       description:
         "Web development, AI integrations, e-commerce, business systems, SEO/GEO/AEO, digital marketing and maintenance services by Ghulam Mustafa in Lahore, Pakistan, for local and international clients.",
       inLanguage: "en",
-      about: { "@id": `${SITE_URL}/#person` },
-      mainEntity: { "@id": `${PAGE_URL}#services` },
+      isPartOf: {
+        "@id": `${SITE_URL}/#website`,
+      },
+      about: {
+        "@id": `${SITE_URL}/#organization`,
+      },
+      mainEntity: {
+        "@id": `${PAGE_URL}#services`,
+      },
     },
     {
       "@type": "ItemList",
@@ -465,7 +710,9 @@ const servicesStructuredData = {
       itemListElement: serviceSchema.map((service, index) => ({
         "@type": "ListItem",
         position: index + 1,
-        item: { "@id": service["@id"] },
+        item: {
+          "@id": service["@id"],
+        },
       })),
     },
     ...serviceSchema,
@@ -493,6 +740,7 @@ function Heading({
     <div className="gs-heading">
       <p className="gs-eyebrow">{eyebrow}</p>
       <h2>{title}</h2>
+
       {children && <p className="gs-copy">{children}</p>}
     </div>
   );
@@ -517,6 +765,31 @@ export default function Services() {
       />
 
       <div className="gs-container">
+        {/* TOP APP NAV */}
+        <nav
+          className="gs-top-nav"
+          aria-label="Services navigation"
+        >
+          <a
+            href="/"
+            className="gs-home-button"
+            aria-label="Go to GmCodes9 homepage"
+            title="Home"
+          >
+            <Home size={16} aria-hidden="true" />
+            <span>Home</span>
+          </a>
+
+          <div className="gs-top-nav-links">
+            <a href="#all-services">Services</a>
+            <a href="#service-directory">All Service Pages</a>
+            <a href="#search-foundations">SEO / AI</a>
+            <a href="#service-process">Process</a>
+            <a href="#service-faq">FAQ</a>
+          </div>
+        </nav>
+
+        {/* HERO */}
         <div className="gs-hero">
           <div className="gs-hero-grid" aria-hidden="true" />
           <div className="gs-orb gs-orb-one" aria-hidden="true" />
@@ -539,9 +812,10 @@ export default function Services() {
 
             <p className="gs-hero-description">
               GmCodes9 provides complete digital solutions ranging from modern
-              business websites and full-stack applications to AI integrations,
-              e-commerce, CRM systems, SEO/GEO/AEO, social media management and
-              paid advertising for businesses in Pakistan and international clients.
+              business websites and full-stack applications to AI
+              integrations, e-commerce, CRM systems, SEO/GEO/AEO, social media
+              management and paid advertising for businesses in Pakistan and
+              international clients.
             </p>
 
             <div className="gs-actions">
@@ -556,7 +830,12 @@ export default function Services() {
                 Discuss Your Project
                 <ArrowRight size={17} aria-hidden="true" />
               </a>
-              <a href="#all-services" className="gs-button">
+
+              <a
+                href="#all-services"
+                className="gs-button"
+                aria-label="Explore all GmCodes9 services"
+              >
                 Explore Services
                 <ArrowRight size={17} aria-hidden="true" />
               </a>
@@ -580,6 +859,7 @@ export default function Services() {
           </div>
         </div>
 
+        {/* OVERVIEW */}
         <div className="gs-grid gs-grid-four gs-overview">
           {overview.map((item, index) => (
             <div
@@ -594,37 +874,53 @@ export default function Services() {
           ))}
         </div>
 
+        {/* PROVIDER */}
         <aside
           className="gs-provider gs-card"
-          aria-label="About the service provider"
+          aria-label="About the GmCodes9 service provider"
         >
           <div>
             <p className="gs-eyebrow">The person behind GmCodes9</p>
+
             <h2>Ghulam Mustafa · Full Stack Engineer</h2>
+
             <p className="gs-copy">
               Based in Lahore, Pakistan, with 4+ years of experience.
-              Providing full-stack web development, AI integrations and digital
-              services for local businesses and international clients.
+              Providing full-stack web development, AI integrations and
+              digital services for local businesses and international clients.
             </p>
           </div>
-          <a href="/#experience" className="gs-button">
+
+          <a
+            href="/#experience"
+            className="gs-button"
+            aria-label="View Ghulam Mustafa's experience"
+          >
             View Experience
             <ArrowRight size={17} aria-hidden="true" />
           </a>
         </aside>
 
-        <nav className="gs-jump-links" aria-label="Services page sections">
+        {/* JUMP LINKS */}
+        <nav
+          className="gs-jump-links"
+          aria-label="Services page sections"
+        >
           {[
             ["#all-services", "All services"],
+            ["#service-directory", "All service pages"],
             ["#search-foundations", "Search & AI discovery"],
             ["#service-process", "Project process"],
             ["#service-faq", "Common questions"],
             ["#start-project", "Start a project"],
           ].map(([href, label]) => (
-            <a key={href} href={href}>{label}</a>
+            <a key={href} href={href}>
+              {label}
+            </a>
           ))}
         </nav>
 
+        {/* SERVICES */}
         <div id="all-services" className="gs-section">
           <Heading
             eyebrow="Complete Services"
@@ -644,8 +940,14 @@ export default function Services() {
                 aria-labelledby={`${service.id}-title`}
               >
                 <IconBox icon={service.icon} />
-                <h3 id={`${service.id}-title`}>{service.title}</h3>
-                <p className="gs-copy">{service.description}</p>
+
+                <h3 id={`${service.id}-title`}>
+                  {service.title}
+                </h3>
+
+                <p className="gs-copy">
+                  {service.description}
+                </p>
 
                 <ul className="gs-features">
                   {service.features.map((feature) => (
@@ -656,23 +958,204 @@ export default function Services() {
                   ))}
                 </ul>
 
-                <a
-                  href={`https://wa.me/923045478602?text=${encodeURIComponent(
-                    `Hi Ghulam Mustafa, I would like to discuss ${service.title}.`
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="gs-card-link"
-                  aria-label={`Discuss ${service.title} on WhatsApp`}
-                >
-                  Discuss this service
-                  <ArrowRight size={16} aria-hidden="true" />
-                </a>
+                <div className="gs-card-actions">
+                  <a
+                    href={service.href}
+                    className="gs-card-link gs-card-link-primary"
+                    aria-label={`Learn more about ${service.title}`}
+                  >
+                    Explore service
+                    <ArrowRight size={16} aria-hidden="true" />
+                  </a>
+
+                  <a
+                    href={`https://wa.me/923045478602?text=${encodeURIComponent(
+                      `Hi Ghulam Mustafa, I would like to discuss ${service.title}.`
+                    )}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="gs-card-link gs-card-link-secondary"
+                    aria-label={`Discuss ${service.title} on WhatsApp`}
+                  >
+                    Discuss
+                    <MessageCircle size={15} aria-hidden="true" />
+                  </a>
+                </div>
               </article>
             ))}
           </div>
         </div>
 
+        {/* DEDICATED SERVICE DIRECTORY */}
+        <div
+          id="service-directory"
+          className="gs-section"
+        >
+          <Heading
+            eyebrow="Dedicated Service Pages"
+            title="Explore each service in detail."
+          >
+            Each service has its own dedicated page covering capabilities,
+            technologies, use cases and project requirements.
+          </Heading>
+
+          <div className="gs-service-directory">
+            <a
+              href="/services/full-stack-development"
+              className="gs-directory-link"
+            >
+              <Code2 size={17} aria-hidden="true" />
+              <span>Full Stack Development</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/web-development"
+              className="gs-directory-link"
+            >
+              <MonitorSmartphone size={17} aria-hidden="true" />
+              <span>Web Development</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/ecommerce-development"
+              className="gs-directory-link"
+            >
+              <ShoppingCart size={17} aria-hidden="true" />
+              <span>E-Commerce Development</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/crm-dashboard-development"
+              className="gs-directory-link"
+            >
+              <LayoutDashboard size={17} aria-hidden="true" />
+              <span>CRM &amp; Dashboard Development</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/custom-web-app-development"
+              className="gs-directory-link"
+            >
+              <Blocks size={17} aria-hidden="true" />
+              <span>Custom Web App Development</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/ai-development"
+              className="gs-directory-link"
+            >
+              <Bot size={17} aria-hidden="true" />
+              <span>AI Development</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/seo"
+              className="gs-directory-link"
+            >
+              <Search size={17} aria-hidden="true" />
+              <span>SEO</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/technical-seo"
+              className="gs-directory-link"
+            >
+              <Gauge size={17} aria-hidden="true" />
+              <span>Technical SEO</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/local-seo"
+              className="gs-directory-link"
+            >
+              <Home size={17} aria-hidden="true" />
+              <span>Local SEO</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/international-seo"
+              className="gs-directory-link"
+            >
+              <Globe2 size={17} aria-hidden="true" />
+              <span>International SEO</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/geo"
+              className="gs-directory-link"
+            >
+              <Sparkles size={17} aria-hidden="true" />
+              <span>Generative Engine Optimization (GEO)</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/aeo"
+              className="gs-directory-link"
+            >
+              <MessageCircle size={17} aria-hidden="true" />
+              <span>Answer Engine Optimization (AEO)</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/entity-seo"
+              className="gs-directory-link"
+            >
+              <Users size={17} aria-hidden="true" />
+              <span>Entity SEO</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/digital-marketing"
+              className="gs-directory-link"
+            >
+              <Megaphone size={17} aria-hidden="true" />
+              <span>Digital Marketing</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/social-media-marketing"
+              className="gs-directory-link"
+            >
+              <Users size={17} aria-hidden="true" />
+              <span>Social Media Marketing</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/google-ads"
+              className="gs-directory-link"
+            >
+              <BarChart3 size={17} aria-hidden="true" />
+              <span>Google Ads</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+
+            <a
+              href="/services/meta-ads"
+              className="gs-directory-link"
+            >
+              <Target size={17} aria-hidden="true" />
+              <span>Meta Ads</span>
+              <ArrowRight size={15} aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+
+        {/* SEARCH / GEO / AEO */}
         <div
           id="search-foundations"
           className="gs-section gs-panel"
@@ -684,15 +1167,19 @@ export default function Services() {
                 <Search size={15} aria-hidden="true" />
                 SEO / GEO / AEO / Entity
               </p>
+
               <h2 className="gs-large-title">
-                Built to be understood by people, search engines and AI systems.
+                Built to be understood by people, search engines and AI
+                systems.
               </h2>
+
               <p className="gs-copy">
                 Advanced website projects can include SEO/GEO/AEO foundations:
-                technical SEO, clear answers, structured data, entity relationships,
-                social previews, crawlability, performance, accessibility and
-                search-platform integration from the beginning rather than treating
-                search visibility as an afterthought.
+                technical SEO, clear answers, structured data, entity
+                relationships, social previews, crawlability, performance,
+                accessibility and search-platform integration from the
+                beginning rather than treating search visibility as an
+                afterthought.
               </p>
 
               <dl className="gs-definitions">
@@ -703,6 +1190,7 @@ export default function Services() {
                     relevance and the website experience.
                   </dd>
                 </div>
+
                 <div>
                   <dt>AEO</dt>
                   <dd>
@@ -710,6 +1198,7 @@ export default function Services() {
                     answers to specific user questions.
                   </dd>
                 </div>
+
                 <div>
                   <dt>GEO</dt>
                   <dd>
@@ -717,20 +1206,64 @@ export default function Services() {
                     understandable for AI-assisted discovery.
                   </dd>
                 </div>
+
                 <div>
                   <dt>Entity</dt>
                   <dd>
-                    Connecting consistent information about the person,
-                    brand, services and official profiles.
+                    Connecting consistent information about the person, brand,
+                    services and official profiles.
                   </dd>
                 </div>
               </dl>
 
               <div className="gs-tags">
                 {[
-                  "Search", "AI Discovery", "Entity",
-                  "Social Sharing", "Performance",
-                ].map((item) => <span key={item}>{item}</span>)}
+                  "Search",
+                  "AI Discovery",
+                  "Entity",
+                  "Social Sharing",
+                  "Performance",
+                ].map((item) => (
+                  <span key={item}>{item}</span>
+                ))}
+              </div>
+
+              {/* SEO CLUSTER INTERNAL LINKS */}
+              <div className="gs-related gs-search-related">
+                <a href="/services/seo">
+                  SEO
+                  <ArrowRight size={15} aria-hidden="true" />
+                </a>
+
+                <a href="/services/technical-seo">
+                  Technical SEO
+                  <ArrowRight size={15} aria-hidden="true" />
+                </a>
+
+                <a href="/services/local-seo">
+                  Local SEO
+                  <ArrowRight size={15} aria-hidden="true" />
+                </a>
+
+                <a href="/services/international-seo">
+                  International SEO
+                  <ArrowRight size={15} aria-hidden="true" />
+                </a>
+
+                <a href="/services/geo">
+                  GEO
+                  <ArrowRight size={15} aria-hidden="true" />
+                </a>
+
+                <a href="/services/aeo">
+                  AEO
+                  <ArrowRight size={15} aria-hidden="true" />
+                </a>
+
+                <a href="/services/entity-seo">
+                  Entity SEO
+                  <ArrowRight size={15} aria-hidden="true" />
+                </a>
               </div>
             </div>
 
@@ -745,11 +1278,13 @@ export default function Services() {
           </div>
         </div>
 
+        {/* CAPABILITIES */}
         <div className="gs-section">
           <Heading
             eyebrow="Built properly"
             title="Strong digital foundations behind the visual design."
           />
+
           <div className="gs-grid gs-grid-three">
             {capabilities.map((item, index) => (
               <article
@@ -758,13 +1293,18 @@ export default function Services() {
                 style={tone(index)}
               >
                 <IconBox icon={item.icon} />
+
                 <h3>{item.title}</h3>
-                <p className="gs-copy">{item.description}</p>
+
+                <p className="gs-copy">
+                  {item.description}
+                </p>
               </article>
             ))}
           </div>
         </div>
 
+        {/* INDUSTRIES */}
         <div className="gs-section gs-split">
           <Heading
             eyebrow="Different businesses. Different needs."
@@ -788,7 +1328,11 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="gs-section gs-panel gs-split" style={tone(0)}>
+        {/* TECHNOLOGY */}
+        <div
+          className="gs-section gs-panel gs-split"
+          style={tone(0)}
+        >
           <Heading
             eyebrow="Technology"
             title="Modern technologies selected according to the project."
@@ -796,6 +1340,7 @@ export default function Services() {
             Frontend, backend, databases, APIs, AI, payments and deployment
             can be combined according to the actual technical requirements.
           </Heading>
+
           <div className="gs-tags gs-tech-tags">
             {technologies.map((technology) => (
               <span key={technology}>{technology}</span>
@@ -803,11 +1348,13 @@ export default function Services() {
           </div>
         </div>
 
+        {/* PROCESS */}
         <div id="service-process" className="gs-section">
           <Heading
             eyebrow="Project Process"
             title="Clear from idea to production."
           />
+
           <ol className="gs-grid gs-grid-four gs-process">
             {process.map((step, index) => (
               <li
@@ -815,16 +1362,24 @@ export default function Services() {
                 className="gs-card gs-small-card"
                 style={tone(index)}
               >
-                <span className="gs-step-number" aria-hidden="true">
+                <span
+                  className="gs-step-number"
+                  aria-hidden="true"
+                >
                   0{index + 1}
                 </span>
+
                 <h3>{step.title}</h3>
-                <p className="gs-copy">{step.description}</p>
+
+                <p className="gs-copy">
+                  {step.description}
+                </p>
               </li>
             ))}
           </ol>
         </div>
 
+        {/* PROJECT LEVELS */}
         <div className="gs-section gs-grid gs-grid-three">
           {levels.map((level, index) => (
             <article
@@ -833,18 +1388,24 @@ export default function Services() {
               style={tone(index)}
             >
               <IconBox icon={level.icon} />
+
               <h3>{level.title}</h3>
-              <p className="gs-copy">{level.description}</p>
+
+              <p className="gs-copy">
+                {level.description}
+              </p>
             </article>
           ))}
         </div>
 
+        {/* FAQ */}
         <div id="service-faq" className="gs-section">
           <Heading
             eyebrow="Questions, answered"
             title="Clear answers before you start."
           >
-            Understand the services, project scope, communication and next steps.
+            Understand the services, project scope, communication and next
+            steps.
           </Heading>
 
           <div className="gs-faq-grid">
@@ -856,18 +1417,46 @@ export default function Services() {
               >
                 <summary>
                   <span>{faq.question}</span>
-                  <ChevronDown size={19} aria-hidden="true" />
+                  <ChevronDown
+                    size={19}
+                    aria-hidden="true"
+                  />
                 </summary>
-                <p className="gs-copy">{faq.answer}</p>
+
+                <p className="gs-copy">
+                  {faq.answer}
+                </p>
               </details>
             ))}
           </div>
 
+          {/* RELATED INTERNAL + EXTERNAL LINKS */}
           <div className="gs-related">
+            <a href="/services/digital-marketing">
+              Explore Digital Marketing
+              <ArrowRight size={16} aria-hidden="true" />
+            </a>
+
+            <a href="/services/social-media-marketing">
+              Social Media Marketing
+              <ArrowRight size={16} aria-hidden="true" />
+            </a>
+
+            <a href="/services/google-ads">
+              Google Ads
+              <ArrowRight size={16} aria-hidden="true" />
+            </a>
+
+            <a href="/services/meta-ads">
+              Meta Ads
+              <ArrowRight size={16} aria-hidden="true" />
+            </a>
+
             <a href="/#projects">
               Explore the portfolio
               <ArrowRight size={16} aria-hidden="true" />
             </a>
+
             <a
               href="https://unionadd.com/"
               target="_blank"
@@ -876,6 +1465,7 @@ export default function Services() {
               Visit Union Add
               <ArrowRight size={16} aria-hidden="true" />
             </a>
+
             <a
               href="https://apkimanzil.vercel.app"
               target="_blank"
@@ -887,19 +1477,32 @@ export default function Services() {
           </div>
         </div>
 
+        {/* FINAL CTA */}
         <div id="start-project" className="gs-section gs-final">
-          <div className="gs-final-glow" aria-hidden="true" />
+          <div
+            className="gs-final-glow"
+            aria-hidden="true"
+          />
+
           <div className="gs-final-content">
             <IconBox icon={MessageCircle} />
-            <p className="gs-eyebrow">Start Your Project</p>
+
+            <p className="gs-eyebrow">
+              Start Your Project
+            </p>
+
             <h2>
-              Need a website, application, AI solution or digital growth service?
+              Need a website, application, AI solution or digital growth
+              service?
             </h2>
+
             <p>
               Share your requirements directly for full-stack development,
               e-commerce, CRM/CMS systems, AI/ML integrations, SEO/GEO/AEO,
-              social media management, Meta Ads, Google Ads or custom digital solutions.
+              social media management, Meta Ads, Google Ads or custom digital
+              solutions.
             </p>
+
             <div className="gs-actions">
               <a
                 href={WHATSAPP_URL}
@@ -912,7 +1515,11 @@ export default function Services() {
                 Message on WhatsApp
                 <ArrowRight size={17} aria-hidden="true" />
               </a>
-              <a href="/#projects" className="gs-button gs-button-dark">
+
+              <a
+                href="/#projects"
+                className="gs-button gs-button-dark"
+              >
                 View Projects
                 <ArrowRight size={17} aria-hidden="true" />
               </a>
@@ -920,6 +1527,16 @@ export default function Services() {
           </div>
         </div>
       </div>
+
+      {/* FLOATING BACK TO TOP */}
+      <a
+        href="#services"
+        className="gs-back-top"
+        aria-label="Back to top"
+        title="Back to top"
+      >
+        <ArrowUp size={18} aria-hidden="true" />
+      </a>
 
       <style>{`
         .gm-services {
@@ -929,17 +1546,30 @@ export default function Services() {
           --gs-text: #172039;
           --gs-muted: #56627a;
           --gs-border: rgba(100,116,160,.18);
+
           position: relative;
           isolation: isolate;
           width: 100%;
           min-width: 0;
           overflow-x: clip;
-          padding: 24px 0 64px;
-          padding-bottom: max(64px, env(safe-area-inset-bottom, 0px));
+          padding: 18px 0 80px;
+          padding-bottom: max(80px, env(safe-area-inset-bottom, 0px));
           background:
-            radial-gradient(ellipse at 0% 8%, rgba(139,92,246,.09), transparent 26%),
-            radial-gradient(ellipse at 100% 35%, rgba(6,182,212,.08), transparent 28%),
-            radial-gradient(ellipse at 0% 68%, rgba(236,72,153,.06), transparent 25%),
+            radial-gradient(
+              ellipse at 0% 8%,
+              rgba(139,92,246,.09),
+              transparent 26%
+            ),
+            radial-gradient(
+              ellipse at 100% 35%,
+              rgba(6,182,212,.08),
+              transparent 28%
+            ),
+            radial-gradient(
+              ellipse at 0% 68%,
+              rgba(236,72,153,.06),
+              transparent 25%
+            ),
             var(--gs-bg);
           color: var(--gs-text);
           -webkit-tap-highlight-color: transparent;
@@ -956,30 +1586,120 @@ export default function Services() {
 
         .gm-services *,
         .gm-services *::before,
-        .gm-services *::after { box-sizing: border-box; }
+        .gm-services *::after {
+          box-sizing: border-box;
+        }
 
         .gm-services h1,
         .gm-services h2,
         .gm-services h3,
-        .gm-services p { margin: 0; }
+        .gm-services p {
+          margin: 0;
+        }
 
         .gm-services ul,
-        .gm-services ol { list-style: none; padding: 0; }
+        .gm-services ol {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
 
         .gm-services a {
           text-decoration: none;
           touch-action: manipulation;
         }
 
-        .gm-services svg { flex-shrink: 0; }
-        .gm-services [id] { scroll-margin-top: 110px; }
+        .gm-services svg {
+          flex-shrink: 0;
+        }
+
+        .gm-services [id] {
+          scroll-margin-top: 100px;
+        }
 
         .gm-services .gs-container {
           width: min(100%, 1248px);
           margin-inline: auto;
-          padding-left: max(clamp(16px, 4vw, 32px), env(safe-area-inset-left, 0px));
-          padding-right: max(clamp(16px, 4vw, 32px), env(safe-area-inset-right, 0px));
+          padding-left: max(
+            clamp(16px, 4vw, 32px),
+            env(safe-area-inset-left, 0px)
+          );
+          padding-right: max(
+            clamp(16px, 4vw, 32px),
+            env(safe-area-inset-right, 0px)
+          );
         }
+
+        /* TOP NAV */
+
+        .gm-services .gs-top-nav {
+          position: sticky;
+          top: 12px;
+          z-index: 20;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          width: fit-content;
+          max-width: 100%;
+          margin: 0 auto 8px;
+          padding: 7px;
+          border: 1px solid var(--gs-border);
+          border-radius: 18px;
+          background: rgba(255,255,255,.78);
+          box-shadow: 0 10px 30px rgba(20,30,70,.08);
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+        }
+
+        .dark .gm-services .gs-top-nav {
+          background: rgba(10,15,30,.78);
+        }
+
+        .gm-services .gs-home-button,
+        .gm-services .gs-top-nav-links a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 7px;
+          min-height: 38px;
+          padding: 8px 12px;
+          border-radius: 12px;
+          color: var(--gs-muted);
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 1.4;
+          white-space: nowrap;
+          transition:
+            background .2s,
+            color .2s,
+            transform .2s;
+        }
+
+        .gm-services .gs-home-button {
+          color: var(--gs-text);
+          background: var(--gs-surface);
+          border: 1px solid var(--gs-border);
+        }
+
+        .gm-services .gs-home-button svg {
+          color: #7c3aed;
+        }
+
+        .gm-services .gs-top-nav-links {
+          display: flex;
+          align-items: center;
+          gap: 3px;
+        }
+
+        .gm-services .gs-top-nav-links a:hover,
+        .gm-services .gs-home-button:hover {
+          color: var(--gs-text);
+          background: rgba(124,58,237,.08);
+          transform: translateY(-1px);
+        }
+
+        /* HERO */
 
         .gm-services .gs-section {
           margin-top: clamp(48px, 7vw, 88px);
@@ -991,10 +1711,13 @@ export default function Services() {
           isolation: isolate;
           overflow: hidden;
           text-align: center;
-          padding: clamp(40px, 7vw, 88px) 0 46px;
+          padding: clamp(42px, 7vw, 88px) 0 46px;
         }
 
-        .gm-services .gs-hero-content { position: relative; z-index: 1; }
+        .gm-services .gs-hero-content {
+          position: relative;
+          z-index: 1;
+        }
 
         .gm-services .gs-hero-grid {
           position: absolute;
@@ -1002,11 +1725,28 @@ export default function Services() {
           opacity: .4;
           pointer-events: none;
           background-image:
-            linear-gradient(var(--gs-border) 1px, transparent 1px),
-            linear-gradient(90deg, var(--gs-border) 1px, transparent 1px);
+            linear-gradient(
+              var(--gs-border) 1px,
+              transparent 1px
+            ),
+            linear-gradient(
+              90deg,
+              var(--gs-border) 1px,
+              transparent 1px
+            );
           background-size: 48px 48px;
-          mask-image: radial-gradient(ellipse at center, black, transparent 72%);
-          -webkit-mask-image: radial-gradient(ellipse at center, black, transparent 72%);
+          mask-image:
+            radial-gradient(
+              ellipse at center,
+              black,
+              transparent 72%
+            );
+          -webkit-mask-image:
+            radial-gradient(
+              ellipse at center,
+              black,
+              transparent 72%
+            );
         }
 
         .gm-services .gs-orb {
@@ -1020,13 +1760,19 @@ export default function Services() {
           animation: gs-float 14s ease-in-out infinite alternate;
         }
 
-        .gm-services .gs-orb-one { background: #a78bfa; top: 0; left: 0; }
+        .gm-services .gs-orb-one {
+          background: #a78bfa;
+          top: 0;
+          left: 0;
+        }
+
         .gm-services .gs-orb-two {
           background: #22d3ee;
           bottom: 20px;
           right: 0;
           animation-delay: -6s;
         }
+
         .gm-services .gs-orb-three {
           background: #f472b6;
           width: 180px;
@@ -1055,8 +1801,13 @@ export default function Services() {
           overflow-wrap: anywhere;
         }
 
-        .gm-services .gs-label svg { color: var(--a); }
-        .dark .gm-services .gs-label svg { color: #c4b5fd; }
+        .gm-services .gs-label svg {
+          color: var(--a);
+        }
+
+        .dark .gm-services .gs-label svg {
+          color: #c4b5fd;
+        }
 
         .gm-services .gs-hero h1 {
           margin-top: 24px;
@@ -1068,21 +1819,41 @@ export default function Services() {
           text-wrap: balance;
         }
 
-        .gm-services .gs-mobile-break { display: none; }
+        .gm-services .gs-mobile-break {
+          display: none;
+        }
 
         .gm-services .gs-gradient {
           color: #7c3aed;
-          background: linear-gradient(110deg, #7c3aed, #db2777, #0284c7, #7c3aed);
+          background:
+            linear-gradient(
+              110deg,
+              #7c3aed,
+              #db2777,
+              #0284c7,
+              #7c3aed
+            );
           background-size: 240% 100%;
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          animation: gs-gradient-flow 10s ease-in-out infinite alternate;
+          animation:
+            gs-gradient-flow
+            10s
+            ease-in-out
+            infinite
+            alternate;
         }
 
         .dark .gm-services .gs-gradient {
           background-image:
-            linear-gradient(110deg, #c4b5fd, #f472b6, #67e8f9, #c4b5fd);
+            linear-gradient(
+              110deg,
+              #c4b5fd,
+              #f472b6,
+              #67e8f9,
+              #c4b5fd
+            );
         }
 
         .gm-services .gs-hero-description {
@@ -1098,10 +1869,23 @@ export default function Services() {
           animation: gs-enter .7s ease-out both;
         }
 
-        .gm-services .gs-hero-content > :nth-child(2) { animation-delay: .06s; }
-        .gm-services .gs-hero-content > :nth-child(3) { animation-delay: .12s; }
-        .gm-services .gs-hero-content > :nth-child(4) { animation-delay: .18s; }
-        .gm-services .gs-hero-content > :nth-child(5) { animation-delay: .24s; }
+        .gm-services .gs-hero-content > :nth-child(2) {
+          animation-delay: .06s;
+        }
+
+        .gm-services .gs-hero-content > :nth-child(3) {
+          animation-delay: .12s;
+        }
+
+        .gm-services .gs-hero-content > :nth-child(4) {
+          animation-delay: .18s;
+        }
+
+        .gm-services .gs-hero-content > :nth-child(5) {
+          animation-delay: .24s;
+        }
+
+        /* BUTTONS */
 
         .gm-services .gs-actions {
           display: flex;
@@ -1131,21 +1915,39 @@ export default function Services() {
           line-height: 1.5;
           text-align: center;
           overflow-wrap: anywhere;
-          transition: transform .25s, box-shadow .25s, border-color .25s;
+          transition:
+            transform .25s,
+            box-shadow .25s,
+            border-color .25s;
         }
 
         .gm-services .gs-button-primary {
-          background: linear-gradient(115deg, #6d28d9, #a21caf 65%, #be185d);
+          background:
+            linear-gradient(
+              115deg,
+              #6d28d9,
+              #a21caf 65%,
+              #be185d
+            );
           color: #fff;
           border-color: transparent;
-          box-shadow: 0 10px 28px rgba(124,58,237,.24);
+          box-shadow:
+            0 10px 28px rgba(124,58,237,.24);
         }
 
-        .gm-services .gs-button svg,
-        .gm-services .gs-card-link svg,
-        .gm-services .gs-related svg {
-          transition: transform .25s;
+        .gm-services .gs-button-white {
+          background: #fff;
+          border-color: #fff;
+          color: #172039;
         }
+
+        .gm-services .gs-button-dark {
+          background: rgba(255,255,255,.07);
+          border-color: rgba(255,255,255,.25);
+          color: #fff;
+        }
+
+        /* HIGHLIGHTS */
 
         .gm-services .gs-highlights {
           display: flex;
@@ -1164,12 +1966,33 @@ export default function Services() {
           line-height: 1.6;
         }
 
-        .gm-services .gs-highlights svg { color: #059669; }
-        .dark .gm-services .gs-highlights svg { color: #34d399; }
+        .gm-services .gs-highlights svg {
+          color: #059669;
+        }
 
-        .gm-services .gs-grid { display: grid; gap: 20px; min-width: 0; }
-        .gm-services .gs-grid-three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-        .gm-services .gs-grid-four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+        .dark .gm-services .gs-highlights svg {
+          color: #34d399;
+        }
+
+        /* GRID */
+
+        .gm-services .gs-grid {
+          display: grid;
+          gap: 20px;
+          min-width: 0;
+        }
+
+        .gm-services .gs-grid-three {
+          grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+        }
+
+        .gm-services .gs-grid-four {
+          grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+        }
+
+        /* CARDS */
 
         .gm-services .gs-card {
           position: relative;
@@ -1178,10 +2001,22 @@ export default function Services() {
           border: 1px solid var(--gs-border);
           border-radius: 23px;
           background:
-            radial-gradient(ellipse at 100% 0%, rgba(var(--rgb), .13), transparent 62%),
-            linear-gradient(155deg, var(--gs-glass), var(--gs-surface));
-          box-shadow: 0 10px 30px rgba(45,35,90,.05);
-          transition: transform .28s, border-color .28s, box-shadow .28s;
+            radial-gradient(
+              ellipse at 100% 0%,
+              rgba(var(--rgb), .13),
+              transparent 62%
+            ),
+            linear-gradient(
+              155deg,
+              var(--gs-glass),
+              var(--gs-surface)
+            );
+          box-shadow:
+            0 10px 30px rgba(45,35,90,.05);
+          transition:
+            transform .28s,
+            border-color .28s,
+            box-shadow .28s;
         }
 
         .gm-services .gs-service-card::before {
@@ -1191,7 +2026,14 @@ export default function Services() {
           left: 24px;
           right: 24px;
           height: 2px;
-          background: linear-gradient(90deg, transparent, var(--a), var(--b), transparent);
+          background:
+            linear-gradient(
+              90deg,
+              transparent,
+              var(--a),
+              var(--b),
+              transparent
+            );
           opacity: .65;
           pointer-events: none;
         }
@@ -1205,17 +2047,32 @@ export default function Services() {
           flex-shrink: 0;
           border: 1px solid rgba(255,255,255,.15);
           border-radius: 15px;
-          background: linear-gradient(135deg, var(--a), var(--b));
+          background:
+            linear-gradient(
+              135deg,
+              var(--a),
+              var(--b)
+            );
           color: #fff;
-          box-shadow: 0 7px 20px rgba(var(--rgb), .22);
-          transition: transform .3s, box-shadow .3s;
+          box-shadow:
+            0 7px 20px rgba(var(--rgb), .22);
+          transition:
+            transform .3s,
+            box-shadow .3s;
         }
 
-        .gm-services .gs-overview-card { padding: 22px; }
+        .gm-services .gs-overview-card {
+          padding: 22px;
+        }
 
         .gm-services .gs-overview > .gs-card {
-          animation: gs-enter .65s ease-out both;
-          animation-delay: calc(.2s + var(--delay, 0ms));
+          animation:
+            gs-enter
+            .65s
+            ease-out
+            both;
+          animation-delay:
+            calc(.2s + var(--delay, 0ms));
         }
 
         .gm-services .gs-eyebrow {
@@ -1228,7 +2085,10 @@ export default function Services() {
           overflow-wrap: anywhere;
         }
 
-        .dark .gm-services .gs-eyebrow { color: #c4b5fd; }
+        .dark .gm-services .gs-eyebrow {
+          color: #c4b5fd;
+        }
+
         .gm-services .gs-overview-card .gs-eyebrow {
           margin-top: 18px;
           color: var(--gs-muted);
@@ -1242,6 +2102,8 @@ export default function Services() {
           overflow-wrap: anywhere;
         }
 
+        /* PROVIDER */
+
         .gm-services .gs-provider {
           display: flex;
           align-items: center;
@@ -1253,7 +2115,10 @@ export default function Services() {
           -webkit-backdrop-filter: blur(12px);
         }
 
-        .gm-services .gs-provider > div { max-width: 760px; min-width: 0; }
+        .gm-services .gs-provider > div {
+          max-width: 760px;
+          min-width: 0;
+        }
 
         .gm-services .gs-provider h2 {
           margin-top: 7px;
@@ -1264,7 +2129,11 @@ export default function Services() {
           overflow-wrap: anywhere;
         }
 
-        .gm-services .gs-provider .gs-button { flex-shrink: 0; }
+        .gm-services .gs-provider .gs-button {
+          flex-shrink: 0;
+        }
+
+        /* JUMP LINKS */
 
         .gm-services .gs-jump-links {
           display: flex;
@@ -1289,8 +2158,13 @@ export default function Services() {
           line-height: 1.6;
           text-align: center;
           overflow-wrap: anywhere;
-          transition: background .2s, border-color .2s, color .2s;
+          transition:
+            background .2s,
+            border-color .2s,
+            color .2s;
         }
+
+        /* HEADINGS */
 
         .gm-services .gs-heading {
           max-width: 790px;
@@ -1317,6 +2191,8 @@ export default function Services() {
           overflow-wrap: anywhere;
         }
 
+        /* SERVICE CARDS */
+
         .gm-services .gs-service-card {
           display: flex;
           flex-direction: column;
@@ -1335,7 +2211,8 @@ export default function Services() {
 
         .gm-services .gs-features {
           display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-template-columns:
+            repeat(2, minmax(0, 1fr));
           gap: 10px;
           margin: 22px 0;
         }
@@ -1351,57 +2228,184 @@ export default function Services() {
           overflow-wrap: anywhere;
         }
 
-        .gm-services .gs-features li span { min-width: 0; }
-        .gm-services .gs-features svg { margin-top: 3px; color: var(--a); }
-        .dark .gm-services .gs-features svg { color: #a5b4fc; }
+        .gm-services .gs-features li span {
+          min-width: 0;
+        }
 
-        .gm-services .gs-card-link {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          gap: 12px;
-          min-height: 48px;
+        .gm-services .gs-features svg {
+          margin-top: 3px;
+          color: var(--a);
+        }
+
+        .dark .gm-services .gs-features svg {
+          color: #a5b4fc;
+        }
+
+        /* SERVICE CARD ACTIONS */
+
+        .gm-services .gs-card-actions {
+          display: grid;
+          grid-template-columns:
+            minmax(0, 1.25fr)
+            minmax(0, .75fr);
+          gap: 10px;
           margin-top: auto;
           padding-top: 12px;
           border-top: 1px solid var(--gs-border);
-          color: var(--gs-text);
-          font-size: 12px;
-          font-weight: 700;
-          line-height: 1.7;
         }
 
-        .gm-services .gs-card-link svg { color: var(--a); }
-        .dark .gm-services .gs-card-link svg { color: #c4b5fd; }
+        .gm-services .gs-card-link {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          min-width: 0;
+          min-height: 42px;
+          padding: 8px 11px;
+          border: 1px solid var(--gs-border);
+          border-radius: 11px;
+          color: var(--gs-text);
+          background: var(--gs-glass);
+          font-size: 11px;
+          font-weight: 700;
+          line-height: 1.5;
+          transition:
+            background .2s,
+            border-color .2s,
+            transform .2s,
+            box-shadow .2s;
+        }
+
+        .gm-services .gs-card-link-primary {
+          border-color: rgba(var(--rgb), .24);
+          background:
+            linear-gradient(
+              135deg,
+              rgba(var(--rgb), .09),
+              var(--gs-glass)
+            );
+        }
+
+        .gm-services .gs-card-link-secondary {
+          color: var(--gs-muted);
+        }
+
+        .gm-services .gs-card-link svg {
+          color: var(--a);
+        }
+
+        .gm-services .gs-card-link-secondary svg {
+          color: #059669;
+        }
+
+        .dark .gm-services .gs-card-link-secondary svg {
+          color: #34d399;
+        }
+
+        /* SERVICE DIRECTORY */
+
+        .gm-services .gs-service-directory {
+          display: grid;
+          grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+          gap: 12px;
+        }
+
+        .gm-services .gs-directory-link {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          min-width: 0;
+          min-height: 58px;
+          padding: 14px 16px;
+          border: 1px solid var(--gs-border);
+          border-radius: 15px;
+          background: var(--gs-glass);
+          color: var(--gs-text);
+          font-size: 13px;
+          font-weight: 650;
+          line-height: 1.5;
+          transition:
+            transform .22s,
+            border-color .22s,
+            background .22s,
+            box-shadow .22s;
+        }
+
+        .gm-services .gs-directory-link span {
+          flex: 1;
+          min-width: 0;
+          overflow-wrap: anywhere;
+        }
+
+        .gm-services .gs-directory-link svg:first-child {
+          color: var(--a);
+        }
+
+        .gm-services .gs-directory-link svg:last-child {
+          flex-shrink: 0;
+          color: var(--gs-muted);
+          transition: transform .22s;
+        }
+
+        /* PANELS */
 
         .gm-services .gs-panel {
           padding: clamp(22px, 4vw, 48px);
           border: 1px solid rgba(var(--rgb), .23);
           border-radius: 28px;
           background:
-            radial-gradient(ellipse at 0% 0%, rgba(var(--rgb), .13), transparent 65%),
-            radial-gradient(ellipse at 100% 100%, rgba(139,92,246,.06), transparent 60%),
+            radial-gradient(
+              ellipse at 0% 0%,
+              rgba(var(--rgb), .13),
+              transparent 65%
+            ),
+            radial-gradient(
+              ellipse at 100% 100%,
+              rgba(139,92,246,.06),
+              transparent 60%
+            ),
             var(--gs-surface);
-          box-shadow: 0 16px 48px rgba(var(--rgb), .045);
+          box-shadow:
+            0 16px 48px rgba(var(--rgb), .045);
         }
 
         .gm-services .gs-split {
           display: grid;
-          grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+          grid-template-columns:
+            minmax(0, .95fr)
+            minmax(0, 1.05fr);
           gap: 36px;
           align-items: center;
         }
 
-        .gm-services .gs-split > * { min-width: 0; }
-        .gm-services .gs-split .gs-heading { margin-bottom: 0; }
-        .gm-services .gs-definitions { display: grid; gap: 13px; margin: 23px 0; }
+        .gm-services .gs-split > * {
+          min-width: 0;
+        }
+
+        .gm-services .gs-split .gs-heading {
+          margin-bottom: 0;
+        }
+
+        /* DEFINITIONS */
+
+        .gm-services .gs-definitions {
+          display: grid;
+          gap: 13px;
+          margin: 23px 0;
+        }
 
         .gm-services .gs-definitions > div {
           display: grid;
-          grid-template-columns: 48px minmax(0, 1fr);
+          grid-template-columns:
+            48px minmax(0, 1fr);
           gap: 10px;
         }
 
-        .gm-services .gs-definitions dt { font-size: 12px; font-weight: 750; }
+        .gm-services .gs-definitions dt {
+          font-size: 12px;
+          font-weight: 750;
+        }
 
         .gm-services .gs-definitions dd {
           margin: 0;
@@ -1411,7 +2415,13 @@ export default function Services() {
           overflow-wrap: anywhere;
         }
 
-        .gm-services .gs-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        /* TAGS */
+
+        .gm-services .gs-tags {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
 
         .gm-services .gs-tags span {
           max-width: 100%;
@@ -1427,12 +2437,17 @@ export default function Services() {
 
         .gm-services .gs-tech-tags span {
           padding: 10px 14px;
-          transition: border-color .2s, background .2s;
+          transition:
+            border-color .2s,
+            background .2s;
         }
+
+        /* SEARCH FEATURES */
 
         .gm-services .gs-search-features {
           display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-template-columns:
+            repeat(2, minmax(0, 1fr));
           gap: 10px;
           margin: 0;
         }
@@ -1451,18 +2466,37 @@ export default function Services() {
           overflow-wrap: anywhere;
         }
 
-        .gm-services .gs-search-features li span { min-width: 0; }
-        .gm-services .gs-search-features svg { color: #0891b2; }
-        .dark .gm-services .gs-search-features svg { color: #67e8f9; }
+        .gm-services .gs-search-features li span {
+          min-width: 0;
+        }
 
-        .gm-services .gs-small-card { padding: 26px; }
+        .gm-services .gs-search-features svg {
+          color: #0891b2;
+        }
+
+        .dark .gm-services .gs-search-features svg {
+          color: #67e8f9;
+        }
+
+        /* SMALL CARDS */
+
+        .gm-services .gs-small-card {
+          padding: 26px;
+        }
+
+        /* INDUSTRIES */
+
         .gm-services .gs-industries {
           display: grid;
-          grid-template-columns: repeat(3, minmax(0, 1fr));
+          grid-template-columns:
+            repeat(3, minmax(0, 1fr));
           gap: 12px;
         }
 
-        .gm-services .gs-industry { padding: 20px; }
+        .gm-services .gs-industry {
+          padding: 20px;
+        }
+
         .gm-services .gs-industry p {
           margin-top: 16px;
           font-size: 13px;
@@ -1471,7 +2505,12 @@ export default function Services() {
           overflow-wrap: anywhere;
         }
 
-        .gm-services .gs-process { margin-bottom: 0; }
+        /* PROCESS */
+
+        .gm-services .gs-process {
+          margin-bottom: 0;
+        }
+
         .gm-services .gs-step-number {
           font-size: 30px;
           line-height: 1;
@@ -1480,11 +2519,16 @@ export default function Services() {
           color: var(--a);
         }
 
-        .dark .gm-services .gs-step-number { color: #c4b5fd; }
+        .dark .gm-services .gs-step-number {
+          color: #c4b5fd;
+        }
+
+        /* FAQ */
 
         .gm-services .gs-faq-grid {
           display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-template-columns:
+            repeat(2, minmax(0, 1fr));
           gap: 14px;
           align-items: start;
         }
@@ -1495,7 +2539,9 @@ export default function Services() {
           border: 1px solid var(--gs-border);
           border-radius: 17px;
           background: var(--gs-glass);
-          transition: border-color .25s, box-shadow .25s;
+          transition:
+            border-color .25s,
+            box-shadow .25s;
         }
 
         .gm-services .gs-faq summary {
@@ -1514,8 +2560,13 @@ export default function Services() {
           touch-action: manipulation;
         }
 
-        .gm-services .gs-faq summary span { min-width: 0; }
-        .gm-services .gs-faq summary::-webkit-details-marker { display: none; }
+        .gm-services .gs-faq summary span {
+          min-width: 0;
+        }
+
+        .gm-services .gs-faq summary::-webkit-details-marker {
+          display: none;
+        }
 
         .gm-services .gs-faq summary svg {
           color: #8b5cf6;
@@ -1524,17 +2575,28 @@ export default function Services() {
 
         .gm-services .gs-faq[open] {
           border-color: rgba(139,92,246,.4);
-          box-shadow: 0 8px 24px rgba(124,58,237,.055);
+          box-shadow:
+            0 8px 24px rgba(124,58,237,.055);
         }
 
-        .gm-services .gs-faq[open] summary svg { transform: rotate(180deg); }
+        .gm-services .gs-faq[open] summary svg {
+          transform: rotate(180deg);
+        }
+
         .gm-services .gs-faq .gs-copy {
           margin: 0;
           padding: 0 0 20px;
           font-size: 13px;
         }
 
-        .gm-services .gs-faq[open] .gs-copy { animation: gs-enter .25s ease-out; }
+        .gm-services .gs-faq[open] .gs-copy {
+          animation:
+            gs-enter
+            .25s
+            ease-out;
+        }
+
+        /* RELATED */
 
         .gm-services .gs-related {
           display: flex;
@@ -1555,15 +2617,26 @@ export default function Services() {
           line-height: 1.6;
         }
 
+        .gm-services .gs-related a svg {
+          flex-shrink: 0;
+          color: #7c3aed;
+          transition: transform .2s;
+        }
+
+        /* FINAL CTA */
+
         .gm-services .gs-final {
           position: relative;
           isolation: isolate;
           overflow: hidden;
-          padding: clamp(32px, 6vw, 72px) clamp(20px, 4vw, 48px);
+          padding:
+            clamp(32px, 6vw, 72px)
+            clamp(20px, 4vw, 48px);
           border: 1px solid rgba(167,139,250,.3);
           border-radius: 30px;
           background: #10152b;
-          box-shadow: 0 24px 60px rgba(76,29,149,.13);
+          box-shadow:
+            0 24px 60px rgba(76,29,149,.13);
           color: #fff;
           text-align: center;
         }
@@ -1573,14 +2646,37 @@ export default function Services() {
           inset: -12%;
           pointer-events: none;
           background:
-            radial-gradient(ellipse at 20% 0%, rgba(139,92,246,.45), transparent 65%),
-            radial-gradient(ellipse at 100% 100%, rgba(6,182,212,.28), transparent 60%),
-            radial-gradient(ellipse at 70% 20%, rgba(219,39,119,.15), transparent 50%);
-          animation: gs-float 16s ease-in-out infinite alternate;
+            radial-gradient(
+              ellipse at 20% 0%,
+              rgba(139,92,246,.45),
+              transparent 65%
+            ),
+            radial-gradient(
+              ellipse at 100% 100%,
+              rgba(6,182,212,.28),
+              transparent 60%
+            ),
+            radial-gradient(
+              ellipse at 70% 20%,
+              rgba(219,39,119,.15),
+              transparent 50%
+            );
+          animation:
+            gs-float
+            16s
+            ease-in-out
+            infinite
+            alternate;
         }
 
-        .gm-services .gs-final-content { position: relative; }
-        .gm-services .gs-final .gs-eyebrow { margin-top: 23px; color: #c4b5fd; }
+        .gm-services .gs-final-content {
+          position: relative;
+        }
+
+        .gm-services .gs-final .gs-eyebrow {
+          margin-top: 23px;
+          color: #c4b5fd;
+        }
 
         .gm-services .gs-final h2 {
           max-width: 850px;
@@ -1601,17 +2697,47 @@ export default function Services() {
           line-height: 1.9;
         }
 
-        .gm-services .gs-button-white {
-          background: #fff;
-          border-color: #fff;
-          color: #172039;
+        /* BACK TO TOP */
+
+        .gm-services .gs-back-top {
+          position: fixed;
+          z-index: 50;
+          right: max(
+            22px,
+            env(safe-area-inset-right, 0px)
+          );
+          bottom: max(
+            22px,
+            env(safe-area-inset-bottom, 0px)
+          );
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 48px;
+          height: 48px;
+          border: 1px solid rgba(124,58,237,.28);
+          border-radius: 16px;
+          background:
+            linear-gradient(
+              135deg,
+              #7c3aed,
+              #db2777
+            );
+          color: #fff;
+          box-shadow:
+            0 12px 30px rgba(76,29,149,.25);
+          transition:
+            transform .25s,
+            box-shadow .25s;
         }
 
-        .gm-services .gs-button-dark {
-          background: rgba(255,255,255,.07);
-          border-color: rgba(255,255,255,.25);
-          color: #fff;
+        .gm-services .gs-back-top:hover {
+          transform: translateY(-4px);
+          box-shadow:
+            0 16px 34px rgba(76,29,149,.35);
         }
+
+        /* FOCUS */
 
         .gm-services a:focus-visible,
         .gm-services summary:focus-visible {
@@ -1620,23 +2746,32 @@ export default function Services() {
           border-radius: 8px;
         }
 
-        .gm-services .gs-button:active { transform: scale(.98); }
+        .gm-services .gs-button:active {
+          transform: scale(.98);
+        }
+
+        /* HOVER */
 
         @media (hover: hover) and (pointer: fine) {
           .gm-services .gs-card:hover {
             transform: translateY(-5px);
             border-color: rgba(var(--rgb), .42);
-            box-shadow: 0 20px 44px rgba(var(--rgb), .12);
+            box-shadow:
+              0 20px 44px rgba(var(--rgb), .12);
           }
 
           .gm-services .gs-card:hover .gs-icon {
-            transform: translateY(-2px) rotate(-4deg);
-            box-shadow: 0 10px 24px rgba(var(--rgb), .3);
+            transform:
+              translateY(-2px)
+              rotate(-4deg);
+            box-shadow:
+              0 10px 24px rgba(var(--rgb), .3);
           }
 
           .gm-services .gs-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 28px rgba(124,58,237,.2);
+            box-shadow:
+              0 12px 28px rgba(124,58,237,.2);
           }
 
           .gm-services .gs-button:hover svg:last-child,
@@ -1645,15 +2780,37 @@ export default function Services() {
             transform: translateX(3px);
           }
 
+          .gm-services .gs-card-link:hover {
+            transform: translateY(-2px);
+            border-color: rgba(var(--rgb), .38);
+            box-shadow:
+              0 8px 20px rgba(var(--rgb), .08);
+          }
+
           .gm-services .gs-jump-links a:hover {
             border-color: #a78bfa;
             color: var(--gs-text);
-            background: rgba(139,92,246,.08);
+            background:
+              rgba(139,92,246,.08);
+          }
+
+          .gm-services .gs-directory-link:hover {
+            transform: translateY(-3px);
+            border-color: rgba(124,58,237,.4);
+            background: rgba(124,58,237,.06);
+            box-shadow:
+              0 10px 25px rgba(124,58,237,.08);
+          }
+
+          .gm-services .gs-directory-link:hover svg:last-child {
+            transform: translateX(3px);
           }
 
           .gm-services .gs-tech-tags span:hover {
-            border-color: rgba(139,92,246,.45);
-            background: rgba(139,92,246,.08);
+            border-color:
+              rgba(139,92,246,.45);
+            background:
+              rgba(139,92,246,.08);
           }
 
           .gm-services .gs-related a:hover {
@@ -1662,24 +2819,36 @@ export default function Services() {
           }
         }
 
+        /* SCROLL ANIMATION */
+
         @supports (animation-timeline: view()) {
           @media (prefers-reduced-motion: no-preference) {
             .gm-services .gs-section > .gs-heading {
-              animation: gs-section-enter linear both;
+              animation:
+                gs-section-enter
+                linear
+                both;
               animation-timeline: view();
-              animation-range: entry 0% entry 80%;
+              animation-range:
+                entry 0%
+                entry 80%;
             }
           }
         }
 
+        /* TABLET */
+
         @media (max-width: 1099px) {
           .gm-services .gs-grid-three,
-          .gm-services .gs-grid-four {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+          .gm-services .gs-grid-four,
+          .gm-services .gs-service-directory {
+            grid-template-columns:
+              repeat(2, minmax(0, 1fr));
           }
 
           .gm-services .gs-split {
-            grid-template-columns: minmax(0, 1fr);
+            grid-template-columns:
+              minmax(0, 1fr);
             gap: 28px;
           }
 
@@ -1687,43 +2856,130 @@ export default function Services() {
             align-items: flex-start;
             flex-direction: column;
           }
+
+          .gm-services .gs-top-nav-links a {
+            padding-inline: 9px;
+          }
         }
+
+        /* MOBILE */
 
         @media (max-width: 639px) {
           .gm-services {
-            padding-top: 12px;
-            padding-bottom: max(36px, env(safe-area-inset-bottom, 0px));
+            padding-top: 10px;
+            padding-bottom:
+              max(
+                36px,
+                env(safe-area-inset-bottom, 0px)
+              );
           }
 
-          .gm-services .gs-grid-three { grid-template-columns: minmax(0, 1fr); }
-          .gm-services .gs-grid { gap: 16px; }
-          .gm-services .gs-grid-four { gap: 12px; }
-          .gm-services .gs-overview-card { padding: 17px; }
-          .gm-services .gs-overview-value { font-size: 13px; }
+          .gm-services .gs-top-nav {
+            width: 100%;
+            top: 8px;
+            justify-content: space-between;
+          }
+
+          .gm-services .gs-top-nav-links {
+            display: none;
+          }
+
+          .gm-services .gs-home-button {
+            width: 100%;
+          }
+
+          .gm-services .gs-grid-three,
+          .gm-services .gs-service-directory {
+            grid-template-columns:
+              minmax(0, 1fr);
+          }
+
+          .gm-services .gs-grid {
+            gap: 16px;
+          }
+
+          .gm-services .gs-grid-four {
+            gap: 12px;
+          }
+
+          .gm-services .gs-overview-card {
+            padding: 17px;
+          }
+
+          .gm-services .gs-overview-value {
+            font-size: 13px;
+          }
 
           .gm-services .gs-eyebrow {
             font-size: 10px;
             letter-spacing: .12em;
           }
 
-          .gm-services .gs-mobile-break { display: block; }
-          .gm-services .gs-actions { flex-direction: column; }
-          .gm-services .gs-actions .gs-button,
-          .gm-services .gs-provider .gs-button { width: 100%; }
+          .gm-services .gs-mobile-break {
+            display: block;
+          }
 
-          .gm-services .gs-highlights { gap: 10px 14px; }
-          .gm-services .gs-highlights li { font-size: 11px; }
+          .gm-services .gs-actions {
+            flex-direction: column;
+          }
+
+          .gm-services .gs-actions .gs-button,
+          .gm-services .gs-provider .gs-button {
+            width: 100%;
+          }
+
+          .gm-services .gs-highlights {
+            gap: 10px 14px;
+          }
+
+          .gm-services .gs-highlights li {
+            font-size: 11px;
+          }
+
           .gm-services .gs-service-card,
-          .gm-services .gs-small-card { padding: 22px; }
-          .gm-services .gs-card { border-radius: 20px; }
-          .gm-services .gs-card h3 { font-size: 19px; }
-          .gm-services .gs-industries { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-          .gm-services .gs-industry { padding: 18px; }
-          .gm-services .gs-faq-grid { grid-template-columns: minmax(0, 1fr); }
-          .gm-services .gs-faq { padding-inline: 16px; }
+          .gm-services .gs-small-card {
+            padding: 22px;
+          }
+
+          .gm-services .gs-card {
+            border-radius: 20px;
+          }
+
+          .gm-services .gs-card h3 {
+            font-size: 19px;
+          }
+
+          .gm-services .gs-card-actions {
+            grid-template-columns:
+              minmax(0, 1fr);
+          }
+
+          .gm-services .gs-industries {
+            grid-template-columns:
+              repeat(2, minmax(0, 1fr));
+          }
+
+          .gm-services .gs-industry {
+            padding: 18px;
+          }
+
+          .gm-services .gs-faq-grid {
+            grid-template-columns:
+              minmax(0, 1fr);
+          }
+
+          .gm-services .gs-faq {
+            padding-inline: 16px;
+          }
+
           .gm-services .gs-panel,
-          .gm-services .gs-final { border-radius: 23px; }
-          .gm-services .gs-search-features { gap: 8px; }
+          .gm-services .gs-final {
+            border-radius: 23px;
+          }
+
+          .gm-services .gs-search-features {
+            gap: 8px;
+          }
 
           .gm-services .gs-search-features li {
             padding: 10px;
@@ -1731,50 +2987,71 @@ export default function Services() {
             gap: 7px;
           }
 
-          .gm-services .gs-orb { filter: blur(38px); }
-          .gm-services .gs-orb-three { display: none; }
+          .gm-services .gs-orb {
+            filter: blur(38px);
+          }
+
+          .gm-services .gs-orb-three {
+            display: none;
+          }
+
           .gm-services .gs-provider {
             backdrop-filter: none;
             -webkit-backdrop-filter: none;
           }
+
+          .gm-services .gs-directory-link {
+            min-height: 54px;
+            padding: 13px 14px;
+          }
+
+          .gm-services .gs-back-top {
+            width: 46px;
+            height: 46px;
+            right: 16px;
+            bottom: 16px;
+            border-radius: 15px;
+          }
         }
+
+        /* VERY SMALL SCREENS */
 
         @media (max-width: 359px) {
           .gm-services .gs-grid-four,
           .gm-services .gs-features,
           .gm-services .gs-search-features {
-            grid-template-columns: minmax(0, 1fr);
+            grid-template-columns:
+              minmax(0, 1fr);
           }
 
-          .gm-services .gs-label { font-size: 10px; padding-inline: 10px; }
-          .gm-services .gs-jump-links a { width: 100%; }
-          .gm-services .gs-button { padding-inline: 12px; gap: 7px; }
+          .gm-services .gs-label {
+            font-size: 10px;
+            padding-inline: 10px;
+          }
+
+          .gm-services .gs-jump-links a {
+            width: 100%;
+          }
+
+          .gm-services .gs-button {
+            padding-inline: 12px;
+            gap: 7px;
+          }
         }
 
         @media (max-width: 279px) {
-          .gm-services .gs-industries { grid-template-columns: minmax(0, 1fr); }
-          .gm-services .gs-definitions > div { grid-template-columns: minmax(0, 1fr); }
+          .gm-services .gs-industries {
+            grid-template-columns:
+              minmax(0, 1fr);
+          }
+
+          .gm-services .gs-definitions > div {
+            grid-template-columns:
+              minmax(0, 1fr);
+          }
         }
 
-        @keyframes gs-enter {
-          from { opacity: 0; transform: translate3d(0, 14px, 0); }
-          to { opacity: 1; transform: translate3d(0, 0, 0); }
-        }
-
-        @keyframes gs-section-enter {
-          from { opacity: .55; transform: translateY(18px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes gs-float {
-          from { transform: translate3d(0, 0, 0); }
-          to { transform: translate3d(16px, -20px, 0); }
-        }
-
-        @keyframes gs-gradient-flow {
-          from { background-position: 0% 50%; }
-          to { background-position: 100% 50%; }
-        }
+        /* REDUCED MOTION */
 
         @media (prefers-reduced-motion: reduce) {
           .gm-services *,
@@ -1791,8 +3068,61 @@ export default function Services() {
           .gm-services .gs-button:active,
           .gm-services .gs-button:hover svg:last-child,
           .gm-services .gs-card-link:hover svg,
-          .gm-services .gs-related a:hover svg {
+          .gm-services .gs-related a:hover svg,
+          .gm-services .gs-directory-link:hover,
+          .gm-services .gs-directory-link:hover svg:last-child,
+          .gm-services .gs-back-top:hover {
             transform: none;
+          }
+        }
+
+        /* ANIMATIONS */
+
+        @keyframes gs-enter {
+          from {
+            opacity: 0;
+            transform:
+              translate3d(0, 14px, 0);
+          }
+
+          to {
+            opacity: 1;
+            transform:
+              translate3d(0, 0, 0);
+          }
+        }
+
+        @keyframes gs-section-enter {
+          from {
+            opacity: .55;
+            transform: translateY(18px);
+          }
+
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes gs-float {
+          from {
+            transform:
+              translate3d(0, 0, 0);
+          }
+
+          to {
+            transform:
+              translate3d(16px, -20px, 0);
+          }
+        }
+
+        @keyframes gs-gradient-flow {
+          from {
+            background-position: 0% 50%;
+          }
+
+          to {
+            background-position: 100% 50%;
           }
         }
       `}</style>

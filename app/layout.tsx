@@ -11,30 +11,33 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "Ghulam Mustafa | Full Stack Engineer",
+      "Ghulam Mustafa | Full Stack Engineer & Founder of GmCodes9",
     template: "%s | GmCodes9",
   },
 
   description:
-    "Ghulam Mustafa is a Full Stack Engineer from Lahore, Pakistan specializing in Next.js, React, Node.js, Laravel, Python, FastAPI, REST APIs, AI/ML integrations, and scalable web applications.",
+    "GmCodes9 by Ghulam Mustafa provides full-stack web development, AI and LLM integrations, custom web applications, SEO, GEO, AEO, entity optimization, and digital marketing services from Lahore, Pakistan for local and international businesses.",
 
   keywords: [
-    "Ghulam Mustafa",
     "GmCodes9",
-    "Ghulam Mustafa Full Stack Engineer",
+    "Ghulam Mustafa",
     "Full Stack Engineer Lahore",
-    "Full Stack Developer Pakistan",
-    "Next.js Developer",
-    "React Developer",
-    "Node.js Developer",
-    "Python Developer",
-    "FastAPI Developer",
-    "Laravel Developer",
-    "AI ML Developer",
+    "Full Stack Engineer Pakistan",
+    "Web Development Lahore",
+    "AI Development",
     "AI Integration",
     "LLM Integration",
-    "Web Application Developer",
-    "Software Engineer Pakistan",
+    "Next.js Development",
+    "React Development",
+    "Node.js Development",
+    "Python Development",
+    "FastAPI Development",
+    "Laravel Development",
+    "SEO",
+    "GEO",
+    "AEO",
+    "Entity SEO",
+    "Digital Marketing",
   ],
 
   authors: [
@@ -45,7 +48,7 @@ export const metadata: Metadata = {
   ],
 
   creator: "Ghulam Mustafa",
-  publisher: "Ghulam Mustafa",
+  publisher: "GmCodes9",
 
   alternates: {
     canonical: SITE_URL,
@@ -54,6 +57,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+
     googleBot: {
       index: true,
       follow: true,
@@ -67,27 +71,32 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     title:
-      "Ghulam Mustafa | Full Stack Engineer • Next.js • React • AI/ML • Laravel",
+      "Ghulam Mustafa | Full Stack Engineer & Founder of GmCodes9",
     description:
-      "Ghulam Mustafa — Full Stack Engineer specializing in Next.js, React, Node.js, Python, FastAPI, Laravel, AI/ML integrations, and modern web applications.",
+      "Full-stack web development, AI and LLM integrations, custom web applications, SEO, GEO, AEO, entity optimization, and digital marketing by Ghulam Mustafa.",
     siteName: "GmCodes9",
     locale: "en_US",
+
     images: [
       {
         url: "/oggy.png",
         width: 1200,
         height: 628,
-        alt: "Ghulam Mustafa — Full Stack Engineer",
+        alt:
+          "Ghulam Mustafa | Full Stack Engineer & Founder of GmCodes9",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
+
     title:
-      "Ghulam Mustafa | Full Stack Engineer • Next.js • React • AI/ML • Laravel",
+        "Ghulam Mustafa | Full Stack Engineer & Founder of GmCodes9",
+
     description:
-      "Ghulam Mustafa — Full Stack Engineer specializing in Next.js, React, Node.js, Python, FastAPI, Laravel, and AI/ML integrations.",
+      "Full-stack engineering, AI/LLM integration, web development, SEO, GEO, AEO and digital marketing by Ghulam Mustafa.",
+
     images: ["/oggy.png"],
   },
 
